@@ -3,6 +3,8 @@ See the website: sciovirtual.org
 
 Sehej's changes: https://docs.google.com/document/d/1Aw9xO2Z9-NdUAPDilfXsjhdIYLP6_xMmSf5PTGxjRjc/edit?usp=sharing
 
+Netifly Link: https://sciovitrualtest.netlify.app/
+
 Webdev meeting summary:
 They use a website builder called host gator website builder.
 They want us to increase responsiveness of their website - transitions, animations, making it look good on a phone, ect. as well as streamlining the editing process - takes too long to edit each page individually.
