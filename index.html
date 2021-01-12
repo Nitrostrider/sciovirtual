@@ -1,337 +1,189 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Sciovirtual Test</title>
+  <title>Sciovirtual - Home</title>
   <meta charset="utf-8">
-<style>
-body {
-  margin:0px;
-  font-family: Helvetica, sans-serif;
-}
-h3 {
-  margin-top:0px;
-  margin-bottom:0px;
-}
-.section {
-  text-align:center;
-  margin-top:10px;
-  padding-left:10%;
-  padding-right:10%;
-  padding-top:20px;
-  padding-bottom:20px;
-}
-.section > h3 {
-  color:#16243C;
-  font-size:50px;
-  font-weight:400;
-}
-.section > p {
-  font-size:25px;
-  font-weight:100;
-  margin-top:37px;
-  line-height:40px;
-}
-.section > p:nth-child(3) {
-  font-weight:normal;
-}
-.lightblue {
-  background-color:#A5B9DF;
-}
-.bg-image{
-  background: url("chemistrypattern.jpg") no-repeat;
-  height: 200px;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  background-attachment:fixed;
-  z-index:1;
-  margin-top:106px;
-}
-
-.bg-image::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background:  #151C4Dcb;
-}
-
-.bg-text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width:90%;
-  z-index: 2;
-  padding: 20px;
-  text-align: center;
-}
-.bg-text h1 {
-  font-size:90px;
-  font-weight: 500;
-  text-shadow: 4px 4px 4px black;
-}
-.nav {
-  list-style-type:none;
-  top:0px;
-  left:0px;
-  right:0px;
-  background-color:#151C4D;
-  position:fixed;
-  z-index:300;
-  margin:0px;
-  padding-right:10px;
-}
-.nav li {
-  float:right;
-}
-.nav li a {
-  display:block;
-  color:white;
-  font-size:16px;
-  text-align:center;
-  padding:45px 18px;
-  text-decoration:none;
-}
-button.orange {
-  border-radius:25px;
-  border:none;
-  padding:15px 40px;
-  margin:0px 15px;
-  font-size:20px;
-  background-color:#E59527;
-  color:white;
-  letter-spacing:1px;
-}
-.flextable {
-  display: flex;
-  flex-wrap: wrap;
-}
-.flexelement {
-  width:33.333333333333333333333%;
-  background-color:blue;
-  margin-top:20px;
-  position:relative;
-}
-.profilepic {
-  width:100%;
-  height:auto;
-  display:block;
-  margin:auto;
-}
-.hoverimage {
-	position:relative;
-	width:80%;
-	margin:auto;
-}
-.description {
-	background-color:grey;
-	width:80%;
-	margin:auto;
-}
-.description > p {
-	font-size:20px;
-	line-height:25px;
-	padding:2px 0px;
-	margin-top:0px;
-	margin-bottom:0px;
-}
-.description > p:nth-child(1) {
-	font-weight:bold;
-}
-.hoverimage:hover .aboutperson {
-  display:block;
-}
-.aboutperson{
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	position:absolute;
-	background:rgb(0,128,0,0.8);
-	height:100%;
-	display:none;
-}
-.footer {
-	height:100px;
-	background-color:#151C4D;
-}
-</style>
+  <link href="/assets/style.css" rel="stylesheet">
 </head>
+
 <body>
-	<ul class="nav">
-		<li><a>Register</a></li>
-		<li><a>Join Us</a></li>
-		<li><a>Resources</a></li>
-		<li><a>Schools</a></li>
-		<li><a>Registration</a></li>
-	</ul>
+  <ul class="nav">
+    <li><a>Register</a></li>
+    <li><a>Join Us</a></li>
+    <li><a>Resources</a></li>
+    <li><a>Schools</a></li>
+    <li><a>Registration</a></li>
+  </ul>
 
-	<div class="bg-image">
-		<div class="bg-text">
-			<h1>Anatomy &amp Physiology</h1>
-		</div>
-	</div>
+  <div class="bg-image">
+    <div class="bg-text">
+      <h1>Anatomy &amp Physiology</h1>
+    </div>
+  </div>
 
-	<div class="section lightblue">
-		<h3>Course Description</h3>
-		<p>Anatomy &amp Physiology covers the skeletal, muscular, and integumentary system.  Specific topics include cellular and anatomical organization, physiological processes, and diseases and disorders of these systems.</p>
-		<p>If you are looking for a new session of this event sign up for the waitlist to be notified!</p>
-		<button class="orange">Register</button>
-		<button class="orange">Waitlist</button>
-	</div>
+  <div class="section lightblue">
+    <h3>Course Description</h3>
+    <p>Anatomy &amp Physiology covers the skeletal, muscular, and integumentary system. Specific topics include
+      cellular and anatomical organization, physiological processes, and diseases and disorders of these systems.
+    </p>
+    <p>If you are looking for a new session of this event sign up for the waitlist to be notified!</p>
+    <button class="orange">Register</button>
+    <button class="orange">Waitlist</button>
+  </div>
 
-	<div class="section" style="background-color:red">
-		<h3>Sessions</h3>
-		<div class="flextable">
-			<div class="flexelement">
-				<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">stuff 1
-					</div>
-				</div>
-				<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-			</div>
-			<div class="flexelement">
-				<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">stuff 2
-					</div>
-				</div>
-				<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-			</div>
-			<div class="flexelement">
-				<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">stuff 3
-					</div>
-				</div>
-				<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="section" style="background-color:red">
+    <h3>Sessions</h3>
+    <div class="flextable">
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">stuff 1
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">stuff 2
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">stuff 3
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div class="section" style="background-color:pink">
-		<h3>Past Sessions</h3>
-		<div class="flextable">
-			<div class="flexelement">
-				<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">asdfasdfasdf
-					</div>
-				</div>
-				<div class="description">
-					<p>Type: Raghav Sriram</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-			</div>
-  		<div class="flexelement">
-  			<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">asdfasdfasdf
-					</div>
-				</div>
-  			<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-  		</div>
-  		<div class="flexelement">
-  			<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">asdfasdfasdf
-					</div>
-				</div>
-  			<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-  		</div>
-  		<div class="flexelement">
-  			<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">asdfasdfasdf
-					</div>
-				</div>
-  			<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-  		</div>
-  		<div class="flexelement">
-  			<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">asdfasdfasdf
-					</div>
-				</div>
-  			<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-  		</div>
-  		<div class="flexelement">
-  			<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">asdfasdfasdf
-					</div>
-				</div>
-  			<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-  		</div>
-  		<div class="flexelement">
-  			<div class="hoverimage">
-					<img class="profilepic" src="placeholder.png">
-					<div class="aboutperson">asdfasdfasdf
-					</div>
-				</div>
-  			<div class="description">
-					<p>Type</p>
-					<p>Name</p>
-					<p>Time</p>
-				</div>
-  		</div>
-  	</div>
+  <div class="section" style="background-color:pink">
+    <h3>Past Sessions</h3>
+    <div class="flextable">
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">asdfasdfasdf
+          </div>
+        </div>
+        <div class="description">
+          <p>Type: Raghav Sriram</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">asdfasdfasdf
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">asdfasdfasdf
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">asdfasdfasdf
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">asdfasdfasdf
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">asdfasdfasdf
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+      <div class="flexelement">
+        <div class="hoverimage">
+          <img class="profilepic" src="placeholder.png">
+          <div class="aboutperson">asdfasdfasdf
+          </div>
+        </div>
+        <div class="description">
+          <p>Type</p>
+          <p>Name</p>
+          <p>Time</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!--add this-->
   <div style="width: 80%; padding-right: 15px; padding-left: 15px;margin-right:10%;margin-left:10%;">
-  	<ul style="list-style-type:none;padding:0;margin:0;border-radius: 50px;
+    <ul style="list-style-type:none;padding:0;margin:0;border-radius: 50px;
   overflow: hidden;text-align:center">
-  		<li style="padding:8px 16px;border-bottom:1px solid #ddd; background-color:#4a9cff; color: white; font-size: 32px; font-weight: 600;">Quick Breakdown</li>
-  		<li style="padding:8px 16px;border-bottom:1px solid #ddd">Every Sunday</li>
-  		<li style="padding:8px 16px;border-bottom:1px solid #ddd">Starts February 21st, 2021</li>
-  		<li style="padding:8px 16px;border-bottom:1px solid #ddd">Duration of 14 Weeks</li>
-  		<li style="padding:8px 16px;border-bottom:1px solid #ddd">Time (EST): 6:00-7:00 PM</li>
-  		<li style="padding:8px 16px;border-bottom:1px solid #ddd">Lead Teacher: Maxwell Ye</li>
-  		<li style="padding:8px 16px;border-bottom:none solid #ddd">
-  			<a target= "_blank" href="https://forms.gle/1jjWFdXNmmsHfb147">
-  				<button style="border-radius:25px;border:none;padding:15px 40px;margin:0px 15px; font-size:20px; background-color:#E59527; color:white; letter-spacing:1px;">Enroll Now!</button>
-  			</a>
-  		</li>
-  	</ul>
+      <li
+        style="padding:8px 16px;border-bottom:1px solid #ddd; background-color:#4a9cff; color: white; font-size: 32px; font-weight: 600;">
+        Quick Breakdown</li>
+      <li style="padding:8px 16px;border-bottom:1px solid #ddd">Every Sunday</li>
+      <li style="padding:8px 16px;border-bottom:1px solid #ddd">Starts February 21st, 2021</li>
+      <li style="padding:8px 16px;border-bottom:1px solid #ddd">Duration of 14 Weeks</li>
+      <li style="padding:8px 16px;border-bottom:1px solid #ddd">Time (EST): 6:00-7:00 PM</li>
+      <li style="padding:8px 16px;border-bottom:1px solid #ddd">Lead Teacher: Maxwell Ye</li>
+      <li style="padding:8px 16px;border-bottom:none solid #ddd">
+        <a target="_blank" href="https://forms.gle/1jjWFdXNmmsHfb147">
+          <button
+            style="border-radius:25px;border:none;padding:15px 40px;margin:0px 15px; font-size:20px; background-color:#E59527; color:white; letter-spacing:1px;">Enroll
+            Now!</button>
+        </a>
+      </li>
+    </ul>
   </div>
 
   <a href="wave.html">Arvyn Waves</a>
@@ -342,4 +194,5 @@ button.orange {
   <!--insert the code down below-->
 
 </body>
+
 </html>
