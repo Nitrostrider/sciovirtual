@@ -1,5 +1,5 @@
 # sciovirtual
-See the website: sciovirtual.org
+See the website: https://sciovirtual.org/
 
 Sehej's changes: https://docs.google.com/document/d/1Aw9xO2Z9-NdUAPDilfXsjhdIYLP6_xMmSf5PTGxjRjc/edit?usp=sharing
 
