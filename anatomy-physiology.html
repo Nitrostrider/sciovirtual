@@ -8,17 +8,17 @@
 
   <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/coursepgstyle.css" rel="stylesheet">
-
+  <!-- js for using same nav and footer code-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#samenavbar").load("/timesaving/navbar.html");
+    });
+  </script>
 </head>
 
 <body>
-  <ul class="nav">
-    <li><a>Register</a></li>
-    <li><a>Join Us</a></li>
-    <li><a>Resources</a></li>
-    <li><a>Schools</a></li>
-    <li><a>Registration</a></li>
-  </ul>
+  
 
   <div class="bg-image">
     <div class="bg-text">

@@ -7,251 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link href="/assets/style.css" rel="stylesheet">
   <style>
-    .navbar {
-      background-color:#151C4D;
+    .nav-item:nth-child(1)>a {
+      color: lightgray !important;
     }
-    .overlineEffect:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  top: 0;
-  left: calc(50% - 20px);
-  background: #E59527;
-    visibility: hidden;
-  border-radius: 5px;
-    transform: scaleX(0);
-  transition: .3s linear;
-}
-.overlineEffect:hover:before,
-.overlineEffect:focus:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-.nav-item {
-  position:relative;
-}
-.nav-link, .navbar-brand{
-  color:white;
-}
-.nav-link:hover, .navbar-brand:hover{
-  color:lightgray;
-}
 
-
-.navlogo {
-  margin:0px 10px;
-  box-sizing: border-box;
-}
-
-
-.nav-item:nth-child(1) > a {
-  color: lightgray!important;
-}
-.nav-item:nth-child(1):before {
-  content: "";
-  position:absolute;
-  width: 40px;
-  height: 3px;
-  top: 0;
-  left: calc(50% - 20px);
-  background: #E59527;
-  border-radius:5px;
-}
-
-
+    .nav-item:nth-child(1):before {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 3px;
+      top: 0;
+      left: calc(50% - 18px);
+      background: #FF9900;
+      border-radius: 1px;
+    }
   </style>
+  <!-- js for using same nav and footer code-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#samenavbar").load("/timesaving/navbar.html");
+    });
+  </script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/img/logoexample.png" alt="Sciovirtual logo" width="30" height="30" class="d-inline-block align-top navlogo"> ScioVirtual Foundation</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link overlineEffect" href="#">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link overlineEffect" href="#">Schools</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link overlineEffect" href="#">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link overlineEffect" href="#">Join Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link overlineEffect" href="#">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="samenavbar"></div>
+  <div class="firstsight" style="background-color:pink">
+    <div class="container" style="background-color:red; margin-top:50px;">
+      <div class="row">
 
-
-  <!--<ul class="nav">
-    <li><a>Register</a></li>
-    <li><a>Join Us</a></li>
-    <li><a>Resources</a></li>
-    <li><a>Schools</a></li>
-    <li><a>Registration</a></li>
-  </ul>-->
-
-  <div class="bg-image">
-    <div class="bg-text">
-      <h1>Anatomy &amp Physiology</h1>
-    </div>
-  </div>
-
-
-  <div class="section lightblue">
-    <h3>Course Description</h3>
-    <p>Anatomy &amp Physiology covers the skeletal, muscular, and integumentary system. Specific topics include
-      cellular and anatomical organization, physiological processes, and diseases and disorders of these systems.
-    </p>
-    <p>If you are looking for a new session of this event sign up for the waitlist to be notified!</p>
-    <button class="orange">Register</button>
-    <button class="orange">Waitlist</button>
-  </div>
-
-  <div class="section" style="background-color:red">
-    <h3>Sessions</h3>
-    <div class="flextable">
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">stuff 1
+        <div class="col-lg-7 d-flex align-items-center">
+          <div class="text-left ">
+            <h1><span>Mentorship</span> from those who've done it</h1>
+            <h2>Live virtual intrstruction from university and high school intrstructors</h2>
+            <div class="text-center">
+              <a style="color:white;" href="courses.html" class="btn-get-started scrollto">Register</a>
+              <a style="color:white;" href="courses.html" class="btn-get-started scrollto">Volunteer</a>
+            </div>
           </div>
         </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
+
+        <div class="col-lg-5">
+          <img src="/assets/img/logoexample.png" class="img-fluid" alt="">
         </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">stuff 2
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">stuff 3
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
+
       </div>
     </div>
   </div>
+  <div style="height:500px;background-color:green"></div>
 
-  <div class="section" style="background-color:pink">
-    <h3>Past Sessions</h3>
-    <div class="flextable">
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">asdfasdfasdf
-          </div>
-        </div>
-        <div class="description">
-          <p>Type: Raghav Sriram</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">asdfasdfasdf
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">asdfasdfasdf
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">asdfasdfasdf
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">asdfasdfasdf
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">asdfasdfasdf
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-      <div class="flexelement">
-        <div class="hoverimage">
-          <img class="profilepic" src="placeholder.png">
-          <div class="aboutperson">asdfasdfasdf
-          </div>
-        </div>
-        <div class="description">
-          <p>Type</p>
-          <p>Name</p>
-          <p>Time</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!--add this-->
   <div style="width: 80%; padding-right: 15px; padding-left: 15px;margin-right:10%;margin-left:10%;">
@@ -275,15 +85,15 @@
     </ul>
   </div>
 
-  <a href="wave.html">Arvyn Waves</a>
+  <a href="/wave.html">Arvyn Waves</a>
+  <a href="/anatomy-physiology.html">Sample course page</a>
 
   <div class="footer">
   </div>
 
   <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!--insert the code down below-->
 
 </body>
-</html>
 
+</html>
