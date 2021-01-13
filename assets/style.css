@@ -33,13 +33,13 @@ body {
   }
   .bg-image{
     background: url("/assets/img/chemistrypattern.jpg") no-repeat;
-    height: 200px;
+    height: 300px;
     background-position: center;
     background-size: cover;
     position: relative;
     background-attachment:fixed;
     z-index:1;
-    margin-top:106px;
+    margin-top:50px;
   }
   
   .bg-image::before {
