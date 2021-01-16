@@ -42,12 +42,43 @@ body {
   border-color:white;
   transition-duration:0.5s;
   width:150px;
-  font-weight:900;
+  font-weight:700;
 }
 .btnlink:hover {
   color:#151c4d;
   background-color:white;
 }
+.trustbox {
+  text-align:center;
+  color:#151c4d;
+  padding:0px 25px;
+}
+.trustbox > p:nth-child(1) {
+  font-size:25px;
+}
+.trustbox > p:nth-child(2) {
+  font-size:19px;
+}
+.trust > h1 {
+  text-align:center;
+  font-weight:900;
+  font-size:50px;
+}
+.trustLogo {
+  display:block;
+  width:100px;
+  margin:auto;
+}
+.col {
+  // Three columns to start
+  @include row-cols(3);
+
+  // Five columns from medium breakpoint up
+  @include media-breakpoint-up(md) {
+    @include row-cols(5);
+  }
+}
+
 
 .footer {
   height:100px;
