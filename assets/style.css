@@ -2,6 +2,7 @@
 bright orange: #FF9900
 dirty orange: #E59527
 dark navy: #151C4D
+purplish gray: #DEE1F6
 */
 body {
   margin:0px;
@@ -68,15 +69,6 @@ body {
   display:block;
   width:100px;
   margin:auto;
-}
-.col {
-  // Three columns to start
-  @include row-cols(3);
-
-  // Five columns from medium breakpoint up
-  @include media-breakpoint-up(md) {
-    @include row-cols(5);
-  }
 }
 
 
