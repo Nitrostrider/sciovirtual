@@ -1,7 +1,7 @@
 /*color guide
 bright orange: #FF9900
-dirty orange: #E59527
-dark navy: #151C4D
+dirty orange: #d2812c151
+dark navy: #1a2150
 purplish gray: #DEE1F6
 */
 body {
@@ -10,7 +10,7 @@ body {
 }
 .firstsight {
   margin-top:55px;
-  background-color:#151c4d;
+  background-color:#1a2150;
 }
 .firstsightText > h1{
   font-weight:900;
@@ -51,7 +51,7 @@ body {
 }
 .trustbox {
   text-align:center;
-  color:#151c4d;
+  color:#1a2510;
   padding:0px 25px;
 }
 .trustbox > p:nth-child(1) {
@@ -74,5 +74,5 @@ body {
 
 .footer {
   height:100px;
-  background-color:#151C4D;
+  background-color:#1a2510;
 }
