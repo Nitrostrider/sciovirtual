@@ -17,18 +17,21 @@
 
 <body>
   <!--https://micku7zu.github.io/vanilla-tilt.js/-->
-  <div class="your-element" style="background-color:red; height:300px;width:300px; margin:auto; transform-style: preserve-3d; transform: perspective(1000px); " data-tilt-reverse="true" data-tilt>
+  <div class="your-element"
+    style="width:300px;height:calc(0.9 * 300px); margin:auto; transform-style: preserve-3d; transform: perspective(2000px); "
+    data-tilt-reverse="true" data-tilt>
+    <img src="/assets/img/earth.png" style="width:100%;height:100%">
     <img style="position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
     top: 50%;
-    left: 50%;
-    transform: translateZ(30px) translateX(-50%) translateY(-50%);
-    box-shadow: 0 0 50px 0 rgba(51, 51, 51, 0.3); background-color:transparent;" src="/assets/img/spaceship.png">
+    right: 50%; transform:rotate(5deg)" src="/assets/img/spaceship.png">
   </div>
-  
+
+
+
   <!-- at the end of the body -->
   <script type="text/javascript" src="/assets/vanilla-tilt/vanilla-tilt.min.js"></script>
-  </body>
+</body>
 
 </html>
