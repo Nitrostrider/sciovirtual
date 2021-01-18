@@ -127,24 +127,26 @@
     #menu {
       position: absolute;
       width: 45vw;
-      height: 5000px;
-      margin: -50px 0 0 0;
+      height: 115vh;
+      margin: -25px 0 0 0px;
       margin-left:calc(55px - 45vw);
-      padding: 125px 0 0 0;
+      padding: 80px 0 0 0;
       background-color: #314F88;
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
       transform: translate(100%, 0);
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
       list-style-type:none;
-      text-align:left;
+      text-align:right;
     }
 
     #menu li {
-      padding: 10px 0 10px 10px;
+      padding: 15px 0px;
       transition-delay: 2s;
+      width:70%;
+      margin-left:15%;
+      font-size:20px;
     }
-
     #menuToggle input:checked~ul {
       transform: none;
     }
@@ -152,6 +154,29 @@
       color:white;
       text-decoration:none;
     }
+    .mobileNavItem:hover {
+      color:#FF9900;
+    }
+    @media (min-width: 800px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+}
   </style>
 </head>
 
@@ -187,7 +212,7 @@
     </div>
   </nav>-->
 
-  <nav class="navbar fixed-top navbar-expand-lg">
+  <nav class="navbar fixed-top navbar-expand-custom">
     <div class="container-lg">
       <a class="navbar-brand" href="#">
         <img src="/assets/img/logo.png" alt="Sciovirtual logo" width="40" height="40"
@@ -198,6 +223,7 @@
           <span></span>
           <span></span>
           <span></span>
+
           <ul id="menu">
             <li><a class="mobileNavItem" href="#">Registration</a></li>
             <li><a class="mobileNavItem" href="#">Schools</a></li>
