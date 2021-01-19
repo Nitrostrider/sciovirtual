@@ -30,8 +30,9 @@
       background: #FF9900;
       border-radius: 1px;
     }
-    #menu li:nth-child(1)>a{
-      color:#FF9900;
+
+    #menu li:nth-child(1)>a {
+      color: #FF9900;
     }
   </style>
   <!-- js for using same nav and footer code-->
@@ -71,10 +72,11 @@
 
         <div class="col-lg-5" style="margin-top:300px">
           <!--https://micku7zu.github.io/vanilla-tilt.js/-->
-          <div style="width:100%;height:91%; margin:auto;transform-style: preserve-3d;" id="tiltobject"
+          <div style="width:100%;height:91%; margin:auto;transform-style: preserve-3d;" id="tiltObject"
             data-tilt-reverse="true" data-tilt data-tilt-full-page-listening>
             <img src="/assets/img/earth.png" style="width:100%;height:100%">
-            <img style="position: absolute; width: 90%; height: 90%; top: 50%; right: 50%; transform:rotate(5deg)" src="/assets/img/spaceship.png">
+            <img style="position: absolute; width: 90%; height: 90%; top: 50%; right: 50%; transform:rotate(5deg)"
+              src="/assets/img/spaceship.png">
           </div>
         </div>
 
@@ -246,8 +248,9 @@
       </li>
     </ul>
   </div>
-
-
+  <div id="hello" data-tilt style="background-color:red;height:400px;width:300px;"></div>
+  <button id="destroy-button">Destroy</button>
+  <button id="enable-button">Enable</button>
   <a href="/wave.html">Arvyn Waves</a>
   <a href="/anatomy-physiology.html">Sample course page</a>
 
@@ -255,18 +258,68 @@
   </div>
   <script type="text/javascript" src="/assets/vanilla-tilt/vanilla-tilt.min.js"></script>
   <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-  let destroyBox = document.querySelector("#tiltobject");
-  VanillaTilt.init(destroyBox);
-  if ($(window).width() < 960) {
-   destroyBox.vanillaTilt.destroy();
-}
-else {
-   alert('More than 960');
-   VanillaTilt.init(destroyBox);
-}
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--
+  <script>
+    let destroyBox = document.querySelector("#tiltObject");
+    VanillaTilt.init(destroyBox);
+
+    document.querySelector("#destroy-button").addEventListener("click", function () {
+      destroyBox.vanillaTilt.destroy();
+    });
+
+    document.querySelector("#enable-button").addEventListener("click", function () {
+      VanillaTilt.init(destroyBox);
+    });</script>-->
+  <script>
+    /*let destroyBox = document.querySelector("#tiltobject");
+    VanillaTilt.init(destroyBox);
+    if ($(window).width() < 960) {
+      destroyBox.vanillaTilt.destroy();
+    }
+    else {
+     alert('More than 960');
+     VanillaTilt.init(destroyBox);
+    }*/
+    let destroyBox = document.querySelector("#tiltObject");
+    VanillaTilt.init(destroyBox);
+
+
+    function red() {
+      destroyBox.vanillaTilt.destroy();
+    }
+
+    function orange() {
+      VanillaTilt.init(destroyBox);
+    }
+
+
+    var bounds = [
+      { min: 0, max: 800, func: red },
+      { min: 800, func: orange }
+    ];
+
+    var resizeFn = function () {
+      var lastBoundry; // cache the last boundry used
+      return function () {
+        var width = window.innerWidth;
+        var boundry, min, max;
+        for (var i = 0; i < bounds.length; i++) {
+          boundry = bounds[i];
+          min = boundry.min || Number.MIN_VALUE;
+          max = boundry.max || Number.MAX_VALUE;
+          if (width > min && width < max
+            && lastBoundry !== boundry) {
+            lastBoundry = boundry;
+            return boundry.func.call(boundry);
+          }
+        }
+      }
+    };
+    $(window).resize(resizeFn());
+    $(document).ready(function () {
+      $(window).trigger('resize');
+    });
+  </script>
 
 
 </body>
