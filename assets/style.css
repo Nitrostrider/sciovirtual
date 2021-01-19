@@ -113,7 +113,7 @@ body {
 }
 
 .footer-heading a:hover{
-  color: red;
+  color: #d2812c;
   transition: 0.3s ease-out;
 }
 
