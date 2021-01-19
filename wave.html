@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Waves for Arvyn</title>
-  <meta charset="utf-8">
-  <style>
-    .ocean { 
-      height: 10px;
-      width:100%;
-      position:absolute;
-      bottom:0;
-      left:0;
-      background: #015871;
-    }
-    
-    .wave {
-      background: url(/assets/img/wave.svg) repeat-x; 
-      position: absolute;
-      top: -198px;
-      width: 6400px;
-      height: 198px;
-      animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-      transform: translate3d(0, 0, 0);
-    }
-    
-    .wave:nth-of-type(2) {
-      top: -175px;
-      animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 10s ease -1.25s infinite;
-      opacity: 1;
-    }
-    
-    @keyframes wave {
-      0% {
-        margin-left: 0;
-      }
-      100% {
-        margin-left: -1600px;
-      }
-    }
-    
-    @keyframes swell {
-      0%, 100% {
-        transform: translate3d(0,-25px,0);
-      }
-      50% {
-        transform: translate3d(0,5px,0);
-      }
-    }
-    </style>
+<title>Page Title</title>
+<style>
+
+
+
+.holdtheocean {
+  position:relative;
+  overflow-x:hidden;
+  width:100%;
+  height:100px;
+}
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #DEE1F6;
+}
+
+.wave {
+  background: url(/assets/img/newave.svg) repeat-x; 
+  position: absolute;
+  top: -100px;
+  width: 6400px;
+  height: 100px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -88.383838px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-12.62626px,0);
+  }
+  50% {
+    transform: translate3d(0,2.5252525px,0);
+  }
+}
+</style>
 </head>
 <body>
+<div class="holdtheocean">
   <div class="ocean">
     <div class="wave"></div>
     <div class="wave"></div>
   </div>
-  <div>hello</div>
+</div>
+
 </body>
 </html>
