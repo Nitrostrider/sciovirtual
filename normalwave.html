@@ -3,7 +3,7 @@
 <head>
 <title>Page Title</title>
 <style>
-
+// best seen at 1500px or less
 
 html, body { height: 100%; }
 body {
@@ -20,7 +20,8 @@ body {
 }
 
 .wave {
-  background: url(/assets/img/wave.svg) repeat-x;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
   top: -198px;
   width: 6400px;
   height: 198px;
@@ -51,15 +52,14 @@ body {
     transform: translate3d(0,5px,0);
   }
 }
-
-
 </style>
 </head>
 <body>
-  <div class="ocean">
-    <div class="wave"></div>
-    <div class="wave"></div>
-  </div>
+
+<div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
 
 </body>
 </html>
