@@ -49,6 +49,7 @@ body {
   color:#151c4d;
   background-color:white;
 }
+/*trust section*/
 .trustbox {
   text-align:center;
   color:#1a2510;
@@ -70,7 +71,16 @@ body {
   width:100px;
   margin:auto;
 }
-
+/*about section*/
+.about {
+  background-color:#DEE1F6;
+  color:#1a2150;
+}
+/*testimonials section*/
+.testimonial {
+  background-color:#1a2150;
+  color:white;
+}
 
 /*FOOTER*/
 
