@@ -3,14 +3,21 @@
 <head>
 <title>Page Title</title>
 <style>
-
-html, body { height: 100%; }
 body {
-  overflow: hidden;
+  margin:0px;
 }
-
+.holdtheholdtheocean {
+  transform:scaleY(0.5);
+}
+.holdtheocean {
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  height:210px;
+  margin:-52.5px 0;
+}
 .ocean { 
-  height: 5%;
+  height:5%;
   width:100%;
   position:absolute;
   bottom:0;
@@ -54,11 +61,13 @@ body {
 </style>
 </head>
 <body>
-
+  <div class="holdtheholdtheocean">
+<div class="holdtheocean">
 <div class="ocean">
   <div class="wave"></div>
   <div class="wave"></div>
 </div>
-
+</div>
+</div>
 </body>
 </html>

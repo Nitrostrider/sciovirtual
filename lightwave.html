@@ -4,36 +4,37 @@
 <title>Page Title</title>
 <style>
 
-html, body { height: 100%; }
-body {
-  overflow: hidden;
-}
 
-.ocean { 
+.lightholdtheocean {
+  position:relative;
+  overflow-x:hidden;
+  width:100%;
+  height:100px;
+}
+.lightocean { 
   height: 5%;
   width:100%;
   position:absolute;
   bottom:0;
   left:0;
-  background: #015871;
+  background: #DEE1F6;
 }
 
-.wave {
-  background: url(/assets/img/wave.svg) repeat-x; 
+.lightwave {
+  background: url(/assets/img/lightwave.svg) repeat-x; 
   position: absolute;
-  top: -198px;
+  top: -100px;
   width: 6400px;
-  height: 198px;
+  height: 100px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 
-.wave:nth-of-type(2) {
-  top: -175px;
+.lightwave:nth-of-type(2) {
+  top: -88.383838px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
-
 @keyframes wave {
   0% {
     margin-left: 0;
@@ -45,20 +46,21 @@ body {
 
 @keyframes swell {
   0%, 100% {
-    transform: translate3d(0,-25px,0);
+    transform: translate3d(0,-12.62626px,0);
   }
   50% {
-    transform: translate3d(0,5px,0);
+    transform: translate3d(0,2.5252525px,0);
   }
 }
 </style>
 </head>
 <body>
-
-<div class="ocean">
-  <div class="wave"></div>
-  <div class="wave"></div>
-</div>
+  <div class="lightholdtheocean">
+    <div class="lightocean">
+      <div class="lightwave"></div>
+      <div class="lightwave"></div>
+    </div>
+  </div>
 
 </body>
 </html>

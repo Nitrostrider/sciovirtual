@@ -4,38 +4,46 @@
 <title>Page Title</title>
 <style>
 
-
-body{
-  margin:0px;
-}
+/*
+html, body { height: 100%; }
+body {
+  overflow: hidden;
+}*/
 .darkholdtheocean {
-  position:relative;
   overflow-x:hidden;
   width:100%;
-  height:100px;
-  background-color:#DEE1F6;
+  height:208px;
+  position:relative;
+  display:block;
 }
-.darkocean { 
-  height: 5%;
+.block {
+  background: #1a2150;
+  /*background:red;*/
+  height:10px;
+  margin-top:198px;
+}
+
+.darkocean {
   width:100%;
   position:absolute;
-  bottom:0;
+  bottom:10px;
   left:0;
-  background: #1a2150;
+  
 }
 
 .darkwave {
   background: url(/assets/img/darkwave.svg) repeat-x; 
   position: absolute;
-  top: -100px;
+  top: -198px;
   width: 6400px;
-  height: 100px;
+  height: 198px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
+  
 }
 
 .darkwave:nth-of-type(2) {
-  top: -88.383838px;
+  top: -175px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
@@ -51,16 +59,17 @@ body{
 
 @keyframes swell {
   0%, 100% {
-    transform: translate3d(0,-12.62626px,0);
+    transform: translate3d(0,-25px,0);
   }
   50% {
-    transform: translate3d(0,2.5252525px,0);
+    transform: translate3d(0,5px,0);
   }
 }
 </style>
 </head>
 <body>
 <div class="darkholdtheocean">
+  <div class="block"></div>
   <div class="darkocean">
     <div class="darkwave"></div>
     <div class="darkwave"></div>
