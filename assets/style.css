@@ -157,16 +157,9 @@ body {
   width: 100%;
   text-align:center;
 }
-.footer-bottom > img {
-  position:relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 .footer-bottom > p {
   position:relative;
-  top: calc(50% - 5px);
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
