@@ -73,10 +73,9 @@
           </div>
         </div>
 
-        <div class="col-lg-5" style="margin-top:200px">
+        <div class="col-lg-5 spaceshipContainer">
           <!--https://micku7zu.github.io/vanilla-tilt.js/-->
-          <div style="width:100%;height:91%; margin:auto;transform-style: preserve-3d;" id="tiltObject"
-            data-tilt-reverse="true" data-tilt data-tilt-full-page-listening>
+          <div id="tiltObject" class="spaceship" data-tilt-reverse="true" data-tilt data-tilt-full-page-listening>
             <img src="/assets/img/earth.png" style="width:100%;height:100%">
             <img style="position: absolute; width: 90%; height: 90%; top: 50%; right: 50%; transform:rotate(5deg)"
               src="/assets/img/spaceship.png">
@@ -91,7 +90,7 @@
     <h1>Trusted By</h1>
 
     <div class="container">
-      <div class="row logoRow">
+      <div class="row">
         <div class="col mt-3 mt-lg-0">
           <img src="/assets/img/logoexample.png" alt="Sponsorship logos" class="trustLogo">
         </div>
@@ -110,7 +109,9 @@
       </div>
     </div>
 
-    <div class="container">
+    <div id="blueBox"></div>
+
+    <div class="container trustText">
       <div class="row">
         <div class="col-md-4 mt-3 mt-lg-0 trustbox">
           <p>1700+ seats filled</p>
@@ -254,46 +255,46 @@
     </div>
   </div>
 
-  <a href="/anatomy-physiology.html">Sample course page</a>
-
   <!--Footer Starts-->
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="footer-heading col-lg-3 col-md-6">
+        <div class="footer-heading col-lg-3 col-sm-6 mt-sm-2">
           <h2>About Us</h2>
           <a href='#'>Privacy Policy</a>
           <a href='#'>Our Team</a>
           <a href='#'>Our Goal</a>
           <a href='#'>Donate</a>
         </div>
-        <div class="footer-heading col-lg-3 col-md-6">
+        <div class="footer-heading col-lg-3 col-sm-6 mt-sm-2">
+          <h2>About Us</h2>
+          <a href='#'>Privacy Policy</a>
+          <a href='#'>Our Team</a>
+          <a href='#'>Our Goal</a>
+          <a href='#'>Donate</a>
+        </div>
+        <div class="footer-heading col-lg-3 col-sm-6 mt-sm-2">
           <h2>Contact Us</h2>
           <a href='#'>Email Us</a>
           <a href='#'>Apply as an Instructor</a>
           <a href='#'>Lead Your School Chapter</a>
           <a href='#'>FAQs</a>
         </div>
-        <div class="footer-heading col-lg-3 col-md-6">
+        <div class="footer-heading col-lg-3 col-sm-6 mt-sm-2">
           <h2>Navigation</h2>
           <a href='#'>Registration</a>
           <a href='#'>Schools</a>
+          <a href='#'>Resources</a>
           <a href='#'>Join Us</a>
-          <a href='#'>Contest</a>
-        </div>
-        <div class="footer-heading col-lg-3 col-md-6">
-          <h2>About Us</h2>
-          <a href='#'>Privacy Policy</a>
-          <a href='#'>Our Team</a>
-          <a href='#'>Our Goal</a>
-          <a href='#'>Donate</a>
+          <a href="#">Abouts Us</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>&copy;2021 by the ScioVirtual Foundation. All rights reserved</p>
+    <img src="/assets/img/logo.png" alt="Sciovirtual logo" width="40" height="40" class="img-fluid">
+    <p>&copy;2021 by the ScioVirtual Foundation. All rights reserved.</p>
   </div>
 
 
@@ -320,8 +321,8 @@
 
 
     var bounds = [
-      { min: 0, max: 800, func: red },
-      { min: 800, func: orange }
+      { min: 0, max: 992, func: red },
+      { min: 992, func: orange }
     ];
 
     var resizeFn = function () {
