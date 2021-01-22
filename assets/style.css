@@ -21,7 +21,6 @@ body {
   color:white;
 }
 .firstsightBtnContainer {
-  white-space:nowrap;
   margin-top:30px;
 }
 .firstsightButton {
@@ -31,7 +30,11 @@ body {
 }
 .firstsightButton:nth-child(1) {
   width:40%;
-
+}
+@media only screen and (max-width: 500px) {
+  .firstsightButton:nth-child(1) {
+    width:50%;
+  }
 }
 .btnlink {
   color:white;
@@ -46,12 +49,34 @@ body {
   font-weight:700;
 }
 .btnlink:hover {
-  color:#151c4d;
+  color:#1a2150;
   background-color:white;
+}
+.spaceshipContainer {
+  margin-top:200px;
+}
+.spaceship {
+  width:80%;
+  height:91%;
+  margin:auto;
+  transform-style: preserve-3d;
+  margin-left:20%;
+}
+@media only screen and (max-width: 992px) {
+  .spaceshipContainer {
+    margin-top:30px;
+  }
+  .spaceShip {
+    width:30px;
+  }
+}
+/*trust section*/
+.trust {
+  margin-top:30px;
 }
 .trustbox {
   text-align:center;
-  color:#1a2510;
+  color:#1a2150;
   padding:0px 25px;
 }
 .trustbox > p:nth-child(1) {
@@ -70,47 +95,52 @@ body {
   width:100px;
   margin:auto;
 }
-
+#blueBox {
+  background-color:#1a2150;
+  height:10px;
+  width:200px;
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-right:auto;
+  margin-left:auto;
+  transform: rotate(356deg);
+}
+/*about section*/
+.about {
+  background-color:#DEE1F6;
+  color:#1a2150;
+}
+/*testimonials section*/
+.testimonial {
+  background-color:#1a2150;
+  color:white;
+  text-align:center;
+}
 
 /*FOOTER*/
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.footer-container{
-  background-color: #1a2150;
-  padding: 2rem 0 4rem 0;
-  position: relative;
-}
-
 .footer{
-  width: 80%;
-  height: 40vh;
   background-color: #1a2150;
   color: #ffffff;
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin-top:30px;
 }
 
 .footer-heading {
-  display: flex;
-  flex-direction: column;
-  margin-right: 4rem;
+  
 }
 
 .footer-heading h2{
   margin-bottom: 2rem;
+  text-align:center;
 }
 
 .footer-heading a{
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  display:block;
 }
 
 .footer-heading a:hover{
@@ -121,13 +151,24 @@ body {
 
 
 .footer-bottom{
-  background: #343a40;
+  background-color: #343a40;
   color: #DEE1F6;
   height: 50px;
   width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  padding-top: 20px;
+  text-align:center;
+}
+.footer-bottom > img {
+  position:relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.footer-bottom > p {
+  position:relative;
+  top: calc(50% - 5px);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display:inline-block;;
 }
