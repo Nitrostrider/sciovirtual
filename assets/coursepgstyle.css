@@ -1,8 +1,8 @@
 @charset "UTF-8";
 body {
-    margin:0px;
-    font-family: Helvetica, sans-serif;
-  }
+  margin:0px;
+  font-family: Helvetica, sans-serif;
+}
   h3 {
     margin-top:0px;
     margin-bottom:0px;
@@ -40,7 +40,7 @@ body {
     position: relative;
     background-attachment:fixed;
     z-index:1;
-    margin-top:50px;
+    margin-top:65px;
   }
   
   .bg-image::before {
