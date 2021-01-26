@@ -15,6 +15,7 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="/assets/style.css" rel="stylesheet">
+  <link href="/timesaving/navbar/navbar.css" rel="stylesheet">
 
   <style>
     .nav-item:nth-child(1)>a {
@@ -41,7 +42,7 @@
     crossorigin="anonymous"></script>
   <script>
     $(function () {
-      $("#samenavbar").load("/timesaving/navbar.html");
+      $("#samenavbar").load("/timesaving/navbar/navbar.html");
       $("#spaceshipEarth").load("/testhoveranimation.html");
       $("#darkwave").load("/darkwavev2.html");
       $("#lightwave").load("/lightwavev2.html");
@@ -297,14 +298,13 @@
   </div>
 
 
-  <!--Footer Ends-->
+ <!-- animation on scroll-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <!--spaceship animation-->
   <script type="text/javascript" src="/assets/vanilla-tilt/vanilla-tilt.min.js"></script>
-  <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     let destroyBox = document.querySelector("#tiltObject");
     VanillaTilt.init(destroyBox);
@@ -346,6 +346,11 @@
       $(window).trigger('resize');
     });
   </script>
+  <!--bootstrap-->
+  <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 
 </body>
