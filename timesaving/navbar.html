@@ -176,6 +176,18 @@
     .navbar-expand-custom .navbar-toggler {
         display: none;
     }
+    /* Add the below transitions to allow a smooth color change similar to lyft */
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: red;
+}
 }
   </style>
 </head>
@@ -224,6 +236,26 @@
       </div>
     </div>
   </nav>
+  <script>
+    /**
+ * Listen to scroll to change header opacity class
+ */
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
+  </script>
 </body>
 
 </html>
