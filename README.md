@@ -6,6 +6,8 @@ Netifly Link: https://sciovitrualtest.netlify.app/
 
 Further Changes: https://docs.google.com/document/d/1AozPjwwfMY7HjGjCfOLzI6K8nSn-GvHvHJ985_Fyp44/edit
 
+Even Further Changes: https://docs.google.com/document/d/1Aw9xO2Z9-NdUAPDilfXsjhdIYLP6_xMmSf5PTGxjRjc/edit
+
 Timesaving Folder
 --------------------------------------
 Includes html files that shorten the time it takes to edit things.
