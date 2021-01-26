@@ -9,7 +9,11 @@ Further Changes: https://docs.google.com/document/d/1AozPjwwfMY7HjGjCfOLzI6K8nSn
 Timesaving Folder
 --------------------------------------
 Includes html files that shorten the time it takes to edit things.
-Edit the code here, and add <div id="sampleid"></div>
+Edit the code here
+```html
+<div id="sampleid"></div>
+```
+And here
 ```html
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
