@@ -27,13 +27,16 @@ body {
   display:inline-block;
   margin-left:0px;
   margin-right:0px;
+  text-align:center;
+  width:49%;
 }
-.firstsightButton:nth-child(1) {
-  width:40%;
-}
-@media only screen and (max-width: 500px) {
+@media screen and (max-width:400px) {
+  .firstsightButton {
+    display:block;
+    width:100%;
+  }
   .firstsightButton:nth-child(1) {
-    width:50%;
+    margin-bottom:20px;
   }
 }
 .btnlink {
