@@ -4,9 +4,13 @@ dirty orange: #d2812c
 dark navy: #1a2150
 purplish gray: #DEE1F6
 */
+html {
+  height:100%;
+}
 body {
   margin:0px;
   font-family: "Lato", sans-serif;
+  height:100%;
 }
 hr {
   margin-top:0;
@@ -16,6 +20,7 @@ hr {
 .firstsight {
   margin-top:65px;
   background-color:#1a2150;
+  padding-bottom:100px;
 }
 .firstsightText > h1{
   font-weight:900;
