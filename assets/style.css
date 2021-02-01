@@ -8,6 +8,11 @@ body {
   margin:0px;
   font-family: "Lato", sans-serif;
 }
+hr {
+  margin-top:0;
+  margin-bottom:0;
+}
+/*firstsight section*/
 .firstsight {
   margin-top:65px;
   background-color:#1a2150;
@@ -126,12 +131,8 @@ body {
   color: #ffffff;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top:30px;
 }
 
-.footer-heading {
-  
-}
 
 .footer-heading h2{
   margin-bottom: 2rem;
