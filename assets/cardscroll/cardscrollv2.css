@@ -1,0 +1,47 @@
+/*
+  STYLING!
+  CHECK THE NOTES. It might be a little confusing but I try and explain as best as I can.
+*/
+
+body {
+  height:auto;
+  /* 100vh x the number of slides + 40vh for the footer */
+  margin: 0;
+  color: #f3f6fb;
+}
+
+.slide {
+  height:100vh;
+}
+
+/* style for the slides */
+
+.slide0 {
+  background-image: url(slide1.jpg);
+  background-position: center;
+  background-repeat: none;
+  position: relative;
+  z-index: 3;
+  /* set the z-index so they stack. The first slide doesn't have a container so it gets a z-index */
+}
+
+/* */
+
+.container1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  /* 100vh x the number of the slide (in this case, 2). This is so the script knows how far to scroll */
+  z-index: 2;
+  /* set the z-index on the containers ONLY (only the first slide needs an index) */
+}
+
+.slide1 {
+  width: 100vw;
+  /* IMPORTANT: divs need a width if they're fixed or they won't be visible */
+  position: fixed;
+  background-position: center;
+  background-repeat: none;
+}
+
