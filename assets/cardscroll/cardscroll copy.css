@@ -1,0 +1,20 @@
+/*
+  STYLING!
+  CHECK THE NOTES. It might be a little confusing but I try and explain as best as I can.
+*/
+body{
+  	margin: 0;
+}
+
+.slide{
+	height: 100vh;
+}
+
+/* style for the slides */
+.slide0{
+	background-color:pink;
+    
+	position: relative;
+	z-index: 3; /* set the z-index so they stack. The first slide doesn't have a container so it gets a z-index */
+}
+
