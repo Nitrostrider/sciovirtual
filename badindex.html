@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sciovirtual - Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--lato fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="/assets/style.css" rel="stylesheet">
+  <link href="/assets/preloader.css" rel="stylesheet">
+
+  <style>
+    .nav-item:nth-child(1)>a {
+      color: lightgray !important;
+    }
+
+    .nav-item:nth-child(1):before {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 3px;
+      top: 0;
+      left: calc(50% - 18px);
+      background: #FF9900;
+      border-radius: 1px;
+    }
+
+    #menu li:nth-child(1)>a {
+      color: #FF9900;
+    }
+
+    /* Parallax base styles
+  --------------------------------------------- */
+
+    .parallax {
+      height: 500px;
+      /* fallback for older browsers */
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-perspective: 300px;
+      perspective: 300px;
+      background-color: blue;
+    }
+
+    .parallax__group {
+      position: relative;
+      height: 500px;
+      /* fallback for older browsers */
+      height: 100vh;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+
+    .parallax__layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .parallax__layer--fore {
+      -webkit-transform: translateZ(90px) scale(.7);
+      transform: translateZ(90px) scale(.7);
+      z-index: 1;
+    }
+
+    .parallax__layer--base {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      z-index: 4;
+    }
+
+    .parallax__layer--back {
+      -webkit-transform: translateZ(-300px) scale(2);
+      transform: translateZ(-300px) scale(2);
+      z-index: 3;
+    }
+
+    .parallax__layer--deep {
+      -webkit-transform: translateZ(-600px) scale(3);
+      transform: translateZ(-600px) scale(3);
+      z-index: 2;
+    }
+
+
+    /* Debugger styles - used to show the effect
+  --------------------------------------------- */
+
+    .debug {
+      position: fixed;
+      top: 0;
+      left: .5em;
+      z-index: 999;
+      background: rgba(0, 0, 0, .85);
+      color: #fff;
+      padding: .5em;
+      border-radius: 0 0 5px 5px;
+    }
+
+    .debug-on .parallax__group {
+      -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+      transform: translate3d(700px, 0, -800px) rotateY(30deg);
+    }
+
+    .debug-on .parallax__layer {
+      box-shadow: 0 0 0 2px #000;
+      opacity: 0.9;
+    }
+
+    .parallax__group {
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+    }
+
+
+
+    /* style the groups
+  --------------------------------------------- */
+
+    #group1 {
+      z-index: 5;
+      /* slide over group 2 */
+    }
+
+    #group1 .parallax__layer--base {
+      background: rgb(102, 204, 102);
+    }
+
+    #group2 {
+      z-index: 3;
+      /* slide under groups 1 and 3 */
+    }
+
+    #group2 .parallax__layer--back {
+      background: rgb(123, 210, 102);
+    }
+
+    #group3 {
+      z-index: 4;
+      /* slide over group 2 and 4 */
+    }
+
+    #group3 .parallax__layer--base {
+      background: rgb(153, 216, 101);
+    }
+
+    #group4 {
+      z-index: 2;
+      /* slide under group 3 and 5 */
+    }
+
+    #group4 .parallax__layer--deep {
+      background: rgb(184, 223, 101);
+    }
+
+    #group5 {
+      z-index: 3;
+      /* slide over group 4 and 6 */
+    }
+
+    #group5 .parallax__layer--base {
+      background: rgb(214, 229, 100);
+    }
+
+    #group6 {
+      z-index: 2;
+      /* slide under group 5 and 7 */
+    }
+
+    #group6 .parallax__layer--back {
+      background: rgb(245, 235, 100);
+    }
+
+    #group7 {
+      z-index: 3;
+      /* slide over group 7 */
+    }
+
+    #group7 .parallax__layer--base {
+      background: rgb(255, 241, 100);
+    }
+  </style>
+  <!-- js for using same nav and footer code-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#samenavbar").load("/timesaving/navbar/navbar.html");
+      $("#spaceshipEarth").load("/testhoveranimation.html");
+      $("#darkwave").load("/darkwavev2.html");
+      $("#lightwave").load("/lightwavev2.html");
+    })
+  </script>
+</head>
+
+<body>
+  <div class="parallax">
+    <div id="group1" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <!--first sight section-->
+        <div class="firstsight">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-7 pt-5 pt-lg-0 d-flex align-items-center">
+                <div class="text-left firstsightText">
+                  <h1><span style="color:#d2812c">Mentorship</span> from those who've done it</h1>
+                  <h2>Live virtual intrstruction from university and high school intrstructors</h2>
+                  <div class="firstsightBtnContainer">
+                    <div class="firstsightButton">
+                      <a href="courses.html" class="btnlink btn">Register</a>
+                    </div>
+                    <div class="firstsightButton">
+                      <a href="courses.html" class="btn btnlink">Volunteer</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 spaceshipContainer">
+                <!--https://micku7zu.github.io/vanilla-tilt.js/-->
+                <div id="tiltObject" class="spaceship" data-tilt-reverse="true" data-tilt data-tilt-full-page-listening>
+                  <img src="/assets/img/earth.png" style="width:100%;height:100%">
+                  <img style="position: absolute; width: 90%; height: 90%; top: 50%; right: 50%; transform:rotate(5deg)"
+                    src="/assets/img/spaceship.png">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="group2" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <div style="height:100px"></div>
+        <!--trusted by section-->
+        <div class="trust">
+          <h1>Trusted By</h1>
+
+          <div class="container">
+            <div class="row">
+              <div class="col mt-3 mt-lg-0">
+                <img src="/assets/img/logoexample.png" alt="Sponsorship logos" class="trustLogo">
+              </div>
+              <div class="col mt-3 mt-lg-0">
+                <img src="/assets/img/logoexample.png" alt="Sponsorship logos" class="trustLogo">
+              </div>
+              <div class="col mt-3 mt-lg-0">
+                <img src="/assets/img/logoexample.png" alt="Sponsorship logos" class="trustLogo">
+              </div>
+              <div class="col mt-3 mt-lg-0">
+                <img src="/assets/img/logoexample.png" alt="Sponsorship logos" class="trustLogo">
+              </div>
+              <div class="col mt-3 mt-lg-0">
+                <img src="/assets/img/logoexample.png" alt="Sponsorship logos" class="trustLogo">
+              </div>
+            </div>
+          </div>
+
+          <div id="blueBox"></div>
+
+          <div class="container trustText">
+            <div class="row">
+              <div class="col-md-4 mt-3 mt-lg-0 trustbox">
+                <p>1700+ seats filled</p>
+                <p>Registered students in ScioVirtual courses</p>
+              </div>
+              <div class="col-md-4 mt-3 mt-lg-0 trustbox">
+                <p>13,500+ hours</p>
+                <p>Instructed by high school and university mentors</p>
+              </div>
+              <div class="col-md-4 mt-3 mt-lg-0 trustbox">
+                <p>70+ hours</p>
+                <p>Courses ranging all science disciplines</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lightwave"></div>
+        <!--about section-->
+        <div class="about">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-lg-4 d-flex justify-content-center align-items-stretch">
+                <img src="/assets/img/medal.png" class="img-fluid" style="width:300px;" alt="Medal">
+              </div>
+              <div class="col-lg-8 d-flex flex-column align-items-stretch justify-content-center ">
+                <h3>Mentorship from state and national-level medalists</h3>
+                <p>Instructors include national and state medalists with extensive competitive experience. Veteran
+                  instructors
+                  mentor students to develop a toolkit to think scientifically and study effectively outside of
+                  class.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col-lg-8 d-flex flex-column align-items-stretch justify-content-center order-lg-1 order-2 text-lg-end">
+                <h3>All profits go to charities helping with COVID-19 relief</h3>
+                <p>All profits from our affordable registration fees are donated to the Community FoodBank. With the
+                  ongoing pandemic, child hunger has been exacerbated. Financial aid is provided for all courses.
+                </p>
+              </div>
+              <div class="col-lg-4 d-flex justify-content-center align-items-stretch order-lg-2 order-1">
+                <img src="/assets/img/dollar.png" class="img-fluid" style="width:300px;" alt="NexEdge Innovations">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 d-flex justify-content-center align-items-stretch">
+                <img src="/assets/img/collaboration.png" class="img-fluid" style="width:300px;"
+                  alt="NexEdge Innovations">
+              </div>
+              <div class="col-lg-8 d-flex flex-column align-items-stretch justify-content-center">
+                <h3>Stay connected with students across the country</h3>
+                <p>Instructors include national and state medalists with extensive competitive experience. Veteran
+                  instructors
+                  mentor students to develop a toolkit to think scientifically and study effectively outside of
+                  class.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="darkwave"></div>
+        <!--testimonials section-->
+        <div class="testimonial">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6" data-aos="zoom-in">
+                <p>"The teachers are really helpful and knowledgeable. They make the kids understand how things work
+                  and
+                  also
+                  tell the kids their own experiences."</p>
+                <p>- Dhruv, Parent of 6th grader</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 order-1" data-aos="zoom-in">
+                <p>"I enjoy learning about all of these different topics from students who have already gone through
+                  these
+                  sorts
+                  of programs."</p>
+                <p>- Tanav, 8th Grade Student</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6" data-aos="zoom-in">
+                <p>"I love the kindness and patience of the instructors. I really can't think of a way to make my
+                  experience
+                  any
+                  better. "</p>
+                <p>- 6th Grade Student</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 order-1" data-aos="zoom-in">
+                <p>"My daughter is really enjoying the courses! Didn’t expect that virtual classes can be so
+                  interesting and
+                  fun-filled."​​</p>
+                <p>- Akshara, Parent of 7th grader</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6" data-aos="zoom-in">
+                <p>"I appreciate that my son is engaged and enjoys learning new material. School is usually boring
+                  for him,
+                  but
+                  the courses have him stretched to learn new things!"</p>
+                <p>- Parent of 5th Grader</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 order-1" data-aos="zoom-in">
+                <p>"Was super fun and exciting. The courses taught me the basic knowledge of science and how to get
+                  better
+                  at
+                  competitive science."</p>
+                <p>- Emily, 7th Grade Student</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6" data-aos="zoom-in">
+                <p>"My favorite thing about the courses is what I have learned, there is nowhere else like
+                  ScioVirtual where
+                  you
+                  can learn so much, so quickly, in a fun and helpful environment."</p>
+                <p>- Sophia, an 8th-grade student</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 order-1" data-aos="zoom-in">
+                <p>"I enjoy that we are able to do what we enjoy and understand more about that particular field."
+                </p>
+                <p>- 8th Grade Student</p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+
+        <!--Footer Starts-->
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-heading col-lg-4 col-sm-6 mt-sm-2">
+                <h2>About Us</h2>
+                <a href='#'>Privacy Policy</a>
+                <a href='#'>Our Team</a>
+                <a href='#'>Our Goal</a>
+                <a href='#'>Donate</a>
+              </div>
+              <div class="footer-heading col-lg-4 col-sm-6 mt-sm-2">
+                <h2>Contact Us</h2>
+                <a href='#'>Email Us</a>
+                <a href='#'>Apply as an Instructor</a>
+                <a href='#'>Lead Your School Chapter</a>
+                <a href='#'>FAQs</a>
+              </div>
+              <div class="footer-heading col-lg-4 col-sm-6 mt-sm-2">
+                <h2>Navigation</h2>
+                <a href='#'>Registration</a>
+                <a href='#'>Schools</a>
+                <a href='#'>Resources</a>
+                <a href='#'>Join Us</a>
+                <a href="#">Abouts Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p><img src="/assets/img/logo.png" alt="Sciovirtual logo" width="40" height="40" class="img-fluid">&copy;2021
+            by
+            the ScioVirtual Foundation. All rights reserved.</p>
+        </div>
+        <div class="preloader">
+          <div class="spinner"></div>
+          <span id="loading-msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="samenavbar"></div>
+
+
+
+  <!-- animation on scroll-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--spaceship animation-->
+  <script type="text/javascript" src="/assets/vanilla-tilt/vanilla-tilt.min.js"></script>
+  <script>
+    let destroyBox = document.querySelector("#tiltObject");
+    VanillaTilt.init(destroyBox);
+
+
+    function red() {
+      destroyBox.vanillaTilt.destroy();
+    }
+
+    function orange() {
+      VanillaTilt.init(destroyBox);
+    }
+
+
+    var bounds = [
+      { min: 0, max: 992, func: red },
+      { min: 992, func: orange }
+    ];
+
+    var resizeFn = function () {
+      var lastBoundry; // cache the last boundry used
+      return function () {
+        var width = window.innerWidth;
+        var boundry, min, max;
+        for (var i = 0; i < bounds.length; i++) {
+          boundry = bounds[i];
+          min = boundry.min || Number.MIN_VALUE;
+          max = boundry.max || Number.MAX_VALUE;
+          if (width > min && width < max
+            && lastBoundry !== boundry) {
+            lastBoundry = boundry;
+            return boundry.func.call(boundry);
+          }
+        }
+      }
+    };
+    $(window).resize(resizeFn());
+    $(document).ready(function () {
+      $(window).trigger('resize');
+    });
+  </script>
+  <!--bootstrap-->
+  <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--preloader-->
+  <script src="/assets/preloader.js"></script>
+
+
+</body>
+
+</html>

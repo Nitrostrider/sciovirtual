@@ -4,18 +4,25 @@ dirty orange: #d2812c
 dark navy: #1a2150
 purplish gray: #DEE1F6
 */
+html {
+  height:100%;
+}
 body {
   margin:0px;
   font-family: "Lato", sans-serif;
+  height:100%;
 }
 hr {
   margin-top:0;
   margin-bottom:0;
 }
 /*firstsight section*/
+/*must be 100vh! or else the cardscroll effect will be ruined*/
 .firstsight {
-  margin-top:65px;
+  padding-top:65px;
   background-color:#1a2150;
+  height:100vh;
+  box-sizing: border-box;
 }
 .firstsightText > h1{
   font-weight:900;
@@ -80,7 +87,7 @@ hr {
 }
 /*trust section*/
 .trust {
-  margin-top:30px;
+  margin-top:65px;
 }
 .trustbox {
   text-align:center;
@@ -97,6 +104,7 @@ hr {
   text-align:center;
   font-weight:900;
   font-size:50px;
+  color:#1a2150;
 }
 .trustLogo {
   display:block;
