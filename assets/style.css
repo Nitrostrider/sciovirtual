@@ -15,13 +15,17 @@ hr {
   margin-top:0;
   margin-bottom:0;
 }
-/*firstsight section*/
-/*must be 100vh! or else the cardscroll effect will be ruined*/
+
 .firstsight {
   padding-top:65px;
   background-color:#1a2150;
   height:100vh;
-  box-sizing: border-box;
+}
+@media only screen and (max-width: 990px) {
+  .firstsight {
+    height:auto;
+    padding-bottom:160px;
+  }
 }
 .firstsightText > h1{
   font-weight:900;

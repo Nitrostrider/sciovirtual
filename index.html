@@ -46,7 +46,7 @@
     #menu li:nth-child(1)>a {
       color: #FF9900;
     }
-    </style>
+  </style>
 </head>
 
 <body>
@@ -94,7 +94,7 @@
     </div>
   </nav>
 
-  <div class="slide slide0">
+  <div class="slide0">
     <!--first sight section-->
     <div class="firstsight">
       <div class="container">
@@ -375,8 +375,8 @@
   </script>
   <!--spaceship animation-->
   <script type="text/javascript" src="/assets/vanilla-tilt/vanilla-tilt.min.js"></script>
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     let destroyBox = document.querySelector("#tiltObject");
     VanillaTilt.init(destroyBox);
@@ -430,9 +430,12 @@
         /*$(this).css({
           'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });*/
-        var cow = $('#slide1').outerHeight();
-        var pig = $(".slide0").height() + cow + 'px';
-        $(this).css('height', pig);
+        var rock = $('#slide1').outerHeight();
+        var paper = $(".slide0").outerHeight();
+        var tripod = paper * 2 + "px";
+        var scissor = rock + paper + 'px';
+        $(this).css('height', scissor);
+        $('.container1').css('height', tripod);
       });
     });
   </script>
