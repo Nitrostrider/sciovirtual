@@ -14,10 +14,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--main stylesheet-->
   <link href="/assets/style.css" rel="stylesheet">
+  <!--for preloader-->
   <link href="/assets/preloader.css" rel="stylesheet">
+  <!--for cardscroll-->
   <link rel="stylesheet" type="text/css" href="/assets/cardscroll/cardscrollv2.css">
-  <link href="/timesaving/navbar/navbar.css" rel="stylesheet">
+  <!--css for navbar-->
+  <link href="/assets/timesaving/navbar/navbar.css" rel="stylesheet">
+  <!--css for waves-->
+  <link href="/assets/timesaving/wave/wave.css" rel="stylesheet">
 
 
 
@@ -44,7 +50,6 @@
   <!-- js for using same nav and footer code-->
   <script>
     $(function () {
-      $("#spaceshipEarth").load("/testhoveranimation.html");
       $("#darkwave").load("/darkwavev2.html");
       $("#lightwave").load("/lightwavev2.html");
     })
@@ -176,7 +181,15 @@
           </div>
         </div>
       </div>
-      <div id="lightwave"></div>
+      <!--light wave-->
+      <div class="holdtheholdtheocean">
+        <div class="lightholdtheocean">
+          <div class="lightocean">
+            <div class="lightwave"></div>
+            <div class="lightwave"></div>
+          </div>
+        </div>
+      </div>
       <!--about section-->
       <div class="about">
         <div class="container">
@@ -222,7 +235,14 @@
 
         </div>
       </div>
-      <div id="darkwave"></div>
+      <div class="holdtheholdtheocean">
+        <div class="darkholdtheocean">
+          <div class="darkocean">
+            <div class="darkwave"></div>
+            <div class="darkwave"></div>
+          </div>
+        </div>
+      </div>
       <!--testimonials section-->
       <div class="testimonial">
         <div class="container">
@@ -425,7 +445,7 @@
   </script>
   <script type="text/javascript" src="/assets/cardscroll/cardscroll.js"></script>
   <!--frosted navbar-->
-  <script type="text/javascript" src="/timesaving/navbar/navbar.js"></script>
+  <script type="text/javascript" src="/assets/timesaving/navbar/navbar.js"></script>
 
 
 </body>
