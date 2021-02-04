@@ -16,8 +16,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--main stylesheet-->
   <link href="/assets/style.css" rel="stylesheet">
-  <!--for preloader-->
-  <link href="/assets/preloader.css" rel="stylesheet">
+  <!--for preloader, currently disabled because js for repeadted elements is deleted
+  <link href="/assets/preloader.css" rel="stylesheet">-->
   <!--for cardscroll-->
   <link rel="stylesheet" type="text/css" href="/assets/cardscroll/cardscrollv2.css">
   <!--css for navbar-->
@@ -46,14 +46,7 @@
     #menu li:nth-child(1)>a {
       color: #FF9900;
     }
-  </style>
-  <!-- js for using same nav and footer code-->
-  <script>
-    $(function () {
-      $("#darkwave").load("/darkwavev2.html");
-      $("#lightwave").load("/lightwavev2.html");
-    })
-  </script>
+    </style>
 </head>
 
 <body>
@@ -428,8 +421,8 @@
   <!--bootstrap-->
   <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!--preloader-->
-  <script src="/assets/preloader.js"></script>
+  <!--preloader, currently disabbled
+  <script src="/assets/preloader.js"></script>-->
   <!--cardscroll-->
   <script>
     jQuery(document).ready(function ($) { //wait for the document to load
