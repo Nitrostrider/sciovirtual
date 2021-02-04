@@ -17,6 +17,8 @@
   <link href="/assets/style.css" rel="stylesheet">
   <link href="/assets/preloader.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/assets/cardscroll/cardscrollv2.css">
+  <link href="/timesaving/navbar/navbar.css" rel="stylesheet">
+
 
 
   <style>
@@ -40,11 +42,8 @@
     }
   </style>
   <!-- js for using same nav and footer code-->
-  <!--jquery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(function () {
-      $("#samenavbar").load("/timesaving/navbar/navbar.html");
       $("#spaceshipEarth").load("/testhoveranimation.html");
       $("#darkwave").load("/darkwavev2.html");
       $("#lightwave").load("/lightwavev2.html");
@@ -54,7 +53,48 @@
 
 <body>
   <!--navbar-->
-  <div id="samenavbar"></div>
+  <nav class="navbar fixed-top navbar-expand-custom">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/img/logo.png" alt="Sciovirtual logo" width="40" height="40"
+          class="d-inline-block align-top navlogo"> ScioVirtual</a>
+      <button class="navbar-toggler">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <li><a class="mobileNavItem" href="#">Registration</a></li>
+            <li><a class="mobileNavItem" href="#">Schools</a></li>
+            <li><a class="mobileNavItem" href="#">Resources</a></li>
+            <li><a class="mobileNavItem" href="#">Join Us</a></li>
+            <li><a class="mobileNavItem" href="#">About Us</a></li>
+          </ul>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link overlineEffect" href="#">Registration</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link overlineEffect" href="#">Schools</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link overlineEffect" href="#">Resources</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link overlineEffect" href="#">Join Us</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link overlineEffect" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="slide slide0">
     <!--first sight section-->
@@ -322,6 +362,8 @@
   </script>
   <!--spaceship animation-->
   <script type="text/javascript" src="/assets/vanilla-tilt/vanilla-tilt.min.js"></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     let destroyBox = document.querySelector("#tiltObject");
     VanillaTilt.init(destroyBox);
@@ -382,6 +424,8 @@
     });
   </script>
   <script type="text/javascript" src="/assets/cardscroll/cardscroll.js"></script>
+  <!--frosted navbar-->
+  <script type="text/javascript" src="/timesaving/navbar/navbar.js"></script>
 
 
 </body>
