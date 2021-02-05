@@ -367,12 +367,6 @@
 
 
 
-
-  <!-- animation on scroll-->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
   <!--spaceship animation-->
   <script type="text/javascript" src="/assets/vanilla-tilt/vanilla-tilt.min.js"></script>
   <!--jquery-->
@@ -425,25 +419,47 @@
   <script src="/assets/preloader.js"></script>-->
   <!--cardscroll-->
   <script>
-    jQuery(document).ready(function ($) { //wait for the document to load
-      $('body').each(function () { //loop through each element with the .dynamic-height class
-        /*$(this).css({
+    window.addEventListener("resize", function () {
+      jQuery(document).ready(function () { //wait for the document to load
+        $('body').each(function () { //loop through each element with the .dynamic-height class
+          /*$(this).css({
           'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });*/
-        var rock = $('#slide1').outerHeight();
-        var paper = $(".slide0").outerHeight();
-        var tripod = paper * 2 + "px";
-        var scissor = rock + paper + 'px';
-        $(this).css('height', scissor);
-        $('.container1').css('height', tripod);
+          var rock = $('#slide1').outerHeight();
+          var paper = $(".slide0").outerHeight();
+          var tripod = paper * 2 + "px";
+          var scissor = rock + paper + 'px';
+          $(this).css('height', scissor);
+          $('.container1').css('height', tripod);
+        });
       });
     });
+    jQuery(document).ready(function () { //wait for the document to load
+        $('body').each(function () { //loop through each element with the .dynamic-height class
+          /*$(this).css({
+          'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
+        });*/
+          var rock = $('#slide1').outerHeight();
+          var paper = $(".slide0").outerHeight();
+          var tripod = paper * 2 + "px";
+          var scissor = rock + paper + 'px';
+          $(this).css('height', scissor);
+          $('.container1').css('height', tripod);
+        });
+      });
   </script>
   <script type="text/javascript" src="/assets/cardscroll/cardscroll.js"></script>
   <!--frosted navbar-->
   <script type="text/javascript" src="/assets/timesaving/navbar/navbar.js"></script>
 
-
+  <!-- animation on scroll-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    var paper = $(".slide0").outerHeight() - 120;
+    AOS.init({
+      offset: 120,
+    });
+  </script>
 </body>
 
 </html>
