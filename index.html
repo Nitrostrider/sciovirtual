@@ -450,7 +450,25 @@
   </script>
   <script type="text/javascript" src="/assets/cardscroll/cardscroll.js"></script>
   <!--frosted navbar-->
-  <script type="text/javascript" src="/assets/timesaving/navbar/navbar.js"></script>
+  <script type="text/javascript">
+    /* Listen to scroll to change header opacity class*/
+    function checkScroll() {
+      var startY = $('.slide0').height(); //The point where the navbar changes in px
+
+      if ($(window).scrollTop() > startY) {
+        $('.navbar').addClass("scrolled");
+      } else {
+        $('.navbar').removeClass("scrolled");
+      }
+    }
+
+    if ($('.navbar').length > 0) {
+      $(window).on("scroll load resize", function () {
+        checkScroll();
+      });
+    }
+  </script>
+
 
   <!-- animation on scroll-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
