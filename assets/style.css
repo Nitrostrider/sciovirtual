@@ -177,6 +177,8 @@ hr {
   margin-right:auto;
   margin-left:auto;
 }
+
+
 /*about section*/
 .about {
   background-color:#DEE1F6;
@@ -188,6 +190,20 @@ hr {
 }
 .about h1 {
   text-align:center;
+}
+.borderEnd {
+  border-right: 3px solid #1a2150;
+}
+.courseQuality {
+  color:#1a2150;
+  text-align:center;
+}
+.courseQuality > h3 {
+  margin:30px 0px;
+  font-size: 35px;
+}
+.courseQuality .col-md-4 {
+  padding:0px 20px;
 }
 /*testimonials section*/
 .testimonial {
