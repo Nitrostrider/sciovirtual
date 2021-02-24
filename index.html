@@ -473,7 +473,14 @@
   <!-- animation on scroll-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    var fired=false;
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > $('.slide0').height()+100 && fired ===false) {
+        AOS.init();
+        fired=true;
+      }
+    });
+
   </script>
 </body>
 
