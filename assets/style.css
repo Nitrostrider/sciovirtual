@@ -98,9 +98,16 @@ hr {
     width:30px;
   }
 }
+/*mission section*/
+.mission {
+  padding-top:150px;
+  background-color:red;
+}
+.missionHeader {
+  text-align:center;
+}
 /*trust section*/
 .trust {
-  margin-top:150px;
   margin-bottom:50px;
 }
 .trustbox {
@@ -144,6 +151,7 @@ hr {
   background-color:#1a2150;
   color:white;
   text-align:center;
+  padding:40px 0px;
 }
 
 /*FOOTER*/
