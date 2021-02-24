@@ -46,6 +46,7 @@ hr {
 }
 .firstsightBtnContainer {
   margin-top:30px;
+  background-color:green;
 }
 .firstsightButton {
   display:inline-block;
@@ -58,9 +59,6 @@ hr {
   .firstsightButton {
     display:block;
     width:100%;
-    margin-bottom:20px;
-  }
-  .firstsightButton:nth-child(1) {
     margin-bottom:20px;
   }
 }
@@ -106,6 +104,44 @@ hr {
 .missionHeader {
   text-align:center;
 }
+/*year round*/
+.yearroundBtnContainer {
+  margin-top:30px;
+  background-color:pink;
+}
+.yearroundButton {
+  display:inline-block;
+  margin-left:0px;
+  margin-right:0px;
+  text-align:center;
+  width:49%;
+}
+@media screen and (max-width:400px) {
+  .yearroundButton {
+    display:block;
+    width:100%;
+    margin-bottom:20px;
+  }
+}
+.yearroundbtnlink {
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+  border-radius:30px;
+  border-style:solid;
+  border-width:4px;
+  border-color:white;
+  transition-duration:0.5s;
+  width:150px;
+  font-weight:700;
+}
+.yearroundbtnlink:hover {
+  color:#1a2150;
+  background-color:white;
+}
+.yearroundHeading {
+  text-align:center;
+}
 /*trust section*/
 .trust {
   margin-bottom:50px;
@@ -132,7 +168,7 @@ hr {
   width:100px;
   margin:auto;
 }
-#blueBox {
+#horizontalBox {
   background-color:#1a2150;
   height:10px;
   width:200px;
@@ -145,6 +181,13 @@ hr {
 .about {
   background-color:#DEE1F6;
   color:#1a2150;
+}
+.aboutHeader {
+  text-align:center;
+  background-color:blue;
+}
+.about h1 {
+  text-align:center;
 }
 /*testimonials section*/
 .testimonial {
