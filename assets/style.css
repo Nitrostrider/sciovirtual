@@ -19,12 +19,19 @@ hr {
 }
 
 .firstsight {
-  padding-top:65px;
   background-color:#1a2150;
   height:100vh;
 }
+@media only screen and (min-width:990px) {
+  .firstsight > .container {
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+  }
+}
 @media only screen and (max-width: 990px) {
   .firstsight {
+    padding-top:65px;
     height:auto;
     padding-bottom:160px;
   }
@@ -51,6 +58,7 @@ hr {
   .firstsightButton {
     display:block;
     width:100%;
+    margin-bottom:20px;
   }
   .firstsightButton:nth-child(1) {
     margin-bottom:20px;
