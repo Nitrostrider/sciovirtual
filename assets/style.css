@@ -1,9 +1,13 @@
 /*color guide
 bright orange: #E49526
-dark navy: #1a2150
+dark navy: #1a2150 (outdated)
 purplish gray: #DEE1F6
-dark dark navy:#151c4d
+dark dark navy:#151c4d (outdated)
 color of blue jeans: #5b80c4
+*/
+/*color guide v2
+dark blue: #19264F;
+dark dark blue: #121940
 */
 html {
   height:100%;
@@ -18,7 +22,7 @@ hr {
 }
 
 .firstsight {
-  background-color:#1a2150;
+  background-color:#121940;
   height:100vh;
 }
 @media only screen and (min-width:990px) {
