@@ -8,7 +8,7 @@ Further Changes: https://docs.google.com/document/d/1AozPjwwfMY7HjGjCfOLzI6K8nSn
 
 Even Further Changes: https://docs.google.com/document/d/1Aw9xO2Z9-NdUAPDilfXsjhdIYLP6_xMmSf5PTGxjRjc/edit
 
-Timesaving Folder
+Timesaving Folder(outdated)
 --------------------------------------
 Includes html files that shorten the time it takes to edit things.
 Edit the code here
