@@ -292,8 +292,7 @@ p {
 .footer{
   background-color: #121940;
   color: #ffffff;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin-top:;
 }
 
 .footer-heading h2{
@@ -313,7 +312,7 @@ p {
   transition: 0.3s ease-out;
 }
 
-.footer-bottom{
+/*.footer-bottom{
   background-color: #343a40;
   color: #DEE1F6;
   height: 50px;
@@ -327,4 +326,4 @@ p {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display:inline-block;;
-}
+}*/
