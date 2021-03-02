@@ -20,10 +20,28 @@ hr {
   margin-top:0;
   margin-bottom:0;
 }
-
+p {
+  font-size:18px;
+}
+/*for the margins*/
+.sciovirtualContainer {
+  max-width:1000px;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
 .firstsight {
   background-color:#121940;
   height:100vh;
+}
+
+.firstsightText > h1{
+  font-weight:900;
+  color:white;
+  font-size:80px;
+}
+.firstsightText > h2{
+  color:white;
 }
 @media only screen and (min-width:990px) {
   .firstsight > .container {
@@ -36,20 +54,15 @@ hr {
   .firstsight {
     padding-top:65px;
     height:auto;
-    padding-bottom:160px;
+    padding-bottom:100px;
   }
-}
-.firstsightText > h1{
-  font-weight:900;
-  color:white;
-  font-size:50px;
-}
-.firstsightText > h2{
-  color:white;
+  .firstsightText > h1{
+    font-size:50px;
+  }
 }
 .firstsightBtnContainer {
   margin-top:30px;
-  background-color:green;
+  /*background-color:green;*/
 }
 .firstsightButton {
   display:inline-block;
@@ -65,93 +78,80 @@ hr {
     margin-bottom:20px;
   }
 }
-.btnlink {
+.orangebtnlink {
   color:white;
   text-decoration:none;
   font-size:20px;
   border-radius:30px;
   border-style:solid;
   border-width:4px;
-  border-color:white;
+  border-color:#E49526;
   transition-duration:0.5s;
   width:150px;
   font-weight:700;
 }
-.btnlink:hover {
-  color:#1a2150;
-  background-color:white;
+.orangebtnlink:hover {
+  color:#121940;
+  background-color:#E49526;
+}
+.bluebtnlink {
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+  border-radius:30px;
+  border-style:solid;
+  border-width:4px;
+  border-color:#5b80c4;
+  transition-duration:0.5s;
+  width:150px;
+  font-weight:700;
+}
+.bluebtnlink:hover {
+  color:#121940;
+  background-color:#5b80c4;
 }
 .spaceshipContainer {
   margin-top:200px;
+  /*background-color:green;*/
 }
-.spaceship {
+.spaceshipandearth {
   width:80%;
   height:91%;
   margin:auto;
   transform-style: preserve-3d;
   margin-left:20%;
+  /*background-color:red;*/
 }
 @media only screen and (max-width: 992px) {
   .spaceshipContainer {
     margin-top:30px;
   }
-  .spaceShip {
-    width:30px;
-  }
 }
 /*mission section*/
 .mission {
   padding-top:150px;
-  background-color:red;
+  background-color:#121940;
+  text-align:center;
+  padding-bottom:50px;
+}
+.mission h1 {
+  font-weight:900;
+  font-size:50px;
+}
+.missionEmphasis {
+  color:#bfbfbf;
 }
 .missionHeader {
   text-align:center;
 }
-/*year round*/
-.yearroundBtnContainer {
-  margin-top:30px;
-  background-color:pink;
-}
-.yearroundButton {
-  display:inline-block;
-  margin-left:0px;
-  margin-right:0px;
-  text-align:center;
-  width:49%;
-}
-@media screen and (max-width:400px) {
-  .yearroundButton {
-    display:block;
-    width:100%;
-    margin-bottom:20px;
-  }
-}
-.yearroundbtnlink {
-  color:white;
-  text-decoration:none;
-  font-size:20px;
-  border-radius:30px;
-  border-style:solid;
-  border-width:4px;
-  border-color:white;
-  transition-duration:0.5s;
-  width:150px;
-  font-weight:700;
-}
-.yearroundbtnlink:hover {
-  color:#1a2150;
-  background-color:white;
-}
-.yearroundHeading {
-  text-align:center;
-}
+
 /*trust section*/
 .trust {
   margin-bottom:50px;
 }
 .trustbox {
   text-align:center;
-  color:#1a2150;
+  color:#121940;
   padding:0px 25px;
 }
 .trustbox > p:nth-child(1) {
@@ -160,11 +160,11 @@ hr {
 .trustbox > p:nth-child(2) {
   font-size:19px;
 }
-.trust > h1 {
+.trust h1 {
   text-align:center;
   font-weight:900;
   font-size:50px;
-  color:#1a2150;
+  color:#121940;
 }
 .trustLogo {
   display:block;
@@ -172,7 +172,7 @@ hr {
   margin:auto;
 }
 #horizontalBox {
-  background-color:#1a2150;
+  background-color:#121940;
   height:10px;
   width:200px;
   margin-top:30px;
@@ -185,46 +185,116 @@ hr {
 /*about section*/
 .about {
   background-color:#DEE1F6;
-  color:#1a2150;
+  color:#121940;
+  padding-bottom:50px;
 }
 .aboutHeader {
   text-align:center;
-  background-color:blue;
+  font-size:30px;
 }
 .about h1 {
   text-align:center;
+  font-weight:900;
+  font-size:50px;
 }
-.borderEnd {
-  border-right: 3px solid #1a2150;
+.about h3 {
+  font-weight:bold;
+}
+.cqbottomborder {
+  background-color:#121940;
+  height:3px;
+  width:300px;
+  margin-top:20px;
+  margin-bottom:30px;
+  margin-right:auto;
+  margin-left:auto;
+  display:block;
+}
+@media only screen and (min-width:769px) {
+  .coursequalityBorder {
+    border-right: 3px solid #121940;
+  }
+  .cqbottomborder {
+    display:none;
+  }
+
 }
 .courseQuality {
-  color:#1a2150;
+  margin-top:70px;
+  color:#121940;
   text-align:center;
 }
-.courseQuality > h3 {
+.courseQuality h3 {
   margin:30px 0px;
   font-size: 35px;
+  font-weight:700;
+}
+.courseQuality h4 {
+  font-weight:bold;
 }
 .courseQuality .col-md-4 {
   padding:0px 20px;
 }
+/*year round*/
+.yearRound {
+  padding:50px 0px;
+  background-color:#121940;
+}
+.yearRound h1 {
+  font-weight:900;
+  font-size:50px;
+}
+.yearroundBtnContainer {
+  margin-top:30px;
+  /*background-color:pink;*/
+}
+.yearroundButton {
+  display:inline-block;
+  margin-left:0px;
+  margin-right:0px;
+  text-align:center;
+  width:49%;
+}
+@media screen and (max-width:992px) {
+  .bigGlobe {
+    width:70%;
+    left:50%;
+    position:relative;
+    transform:translateX(-50%);
+    margin-top:30px;
+  }
+
+}
+@media screen and (max-width:400px) {
+  .yearroundButton {
+    display:block;
+    width:100%;
+    margin-bottom:20px;
+  }
+}
+.yearroundHeading {
+  text-align:center;
+}
 /*testimonials section*/
 .testimonial {
-  background-color:#1a2150;
+  background-color:#121940;
   color:white;
   text-align:center;
   padding:40px 0px;
 }
 
+.testimonialTile {
+  padding:0px 30px;
+  background-color:red;
+}
 /*FOOTER*/
 
 .footer{
-  background-color: #1a2150;
+  background-color: #121940;
   color: #ffffff;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 
 .footer-heading h2{
   margin-bottom: 2rem;
@@ -242,8 +312,6 @@ hr {
   color: #d2812c;
   transition: 0.3s ease-out;
 }
-
-
 
 .footer-bottom{
   background-color: #343a40;

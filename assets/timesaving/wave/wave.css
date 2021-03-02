@@ -1,9 +1,10 @@
-.darkholdtheholdtheocean {
+/*note that wb stands for white on blue*/
+.wbholdtheholdtheocean {
   transform: scaleY(0.5);
-  background: linear-gradient(0deg, #1a2150 2%, #dee1f6 0%);
+  background-image: linear-gradient(0deg, white 10%, #121940 10%);
 }
 
-.darkholdtheocean {
+.wbholdtheocean {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -11,36 +12,37 @@
   margin: -53px 0;
 }
 
-.darkocean {
+.wbocean {
   height: 5%;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #1a2150;
+  background: white;
 }
 
-.darkwave {
-  background: url(/assets/img/darkwave.svg) repeat-x;
+.wbwave {
+  background: url(/assets/img/whiteonbluewave.svg) repeat-x;
   position: absolute;
   top: -198px;
   width: 6400px;
   height: 198px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 
-.darkwave:nth-of-type(2) {
+.wbwave:nth-of-type(2) {
   top: -175px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
-
-.lightholdtheholdtheocean {
+/*note that bg stands for blue on grey*/
+.bgholdtheholdtheocean {
   transform: scaleY(0.5);
-  background: linear-gradient(0deg, #dee1f6 2%, white 0%);
+  background-image: linear-gradient(0deg, #121940 10%, #dee1f6 10%);
 }
-.lightholdtheocean {
+
+.bgholdtheocean {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -48,7 +50,44 @@
   margin: -53px 0;
 }
 
-.lightocean {
+.bgocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #121940;
+}
+
+.bgwave {
+  background: url(/assets/img/blueongreywave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.bgwave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+/*gw stands for grey on white*/
+.gwholdtheholdtheocean {
+  transform: scaleY(0.5);
+  background: linear-gradient(0deg, #dee1f6 10%, white 10%);
+}
+.gwholdtheocean {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 210px;
+  margin: -53px 0;
+}
+
+.gwocean {
   height: 5%;
   width: 100%;
   position: absolute;
@@ -57,8 +96,8 @@
   background: #DEE1F6;
 }
 
-.lightwave {
-  background: url(/assets/img/lightwave.svg) repeat-x;
+.gwwave {
+  background: url(/assets/img/greyonwhitewave.svg) repeat-x;
   position: absolute;
   top: -198px;
   width: 6400px;
@@ -67,7 +106,7 @@
   transform: translate3d(0, 0, 0);
 }
 
-.lightwave:nth-of-type(2) {
+.gwwave:nth-of-type(2) {
   top: -175px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
