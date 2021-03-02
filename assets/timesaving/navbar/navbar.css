@@ -21,7 +21,7 @@
   height: 3px;
   top: 0;
   left: calc(50% - 18px);
-  background: #FF9900;
+  background: #E49526;
   visibility: hidden;
   border-radius: 1px;
   transform: scaleX(0);
@@ -158,7 +158,7 @@
 }
 
 .mobileNavItem:hover {
-  color: #FF9900;
+  color: #E49526;
 }
 
 @media (min-width: 800px) {

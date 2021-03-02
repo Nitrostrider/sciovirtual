@@ -200,6 +200,9 @@ p {
 .about h3 {
   font-weight:bold;
 }
+.aboutSection {
+  text-align:center;
+}
 .cqbottomborder {
   background-color:#121940;
   height:3px;
@@ -285,29 +288,42 @@ p {
 
 .testimonialTile {
   padding:0px 30px;
-  background-color:red;
+  /*background-color:red;*/
 }
 /*FOOTER*/
-
+.seperator {
+  height:1px;
+  background-color:#E49526;
+  width:100%;
+  margin-bottom:50px;
+}
 .footer{
   background-color: #121940;
   color: #ffffff;
-  margin-top:;
+  margin-top:50px;
 }
 
-.footer-heading h2{
-  margin-bottom: 2rem;
+.footer-section h2{
   text-align:center;
+  font-size:20px;
 }
-
-.footer-heading a{
+.orangeLine {
+  height:3px;
+  width:80px;
+  background-color:#E49526;
+  margin-bottom:20px;
+  left:50%;
+  position:relative;
+  transform: translateX(-50%);
+}
+.footer-section a{
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 0.5rem;
   display:block;
 }
 
-.footer-heading a:hover{
+.footer-section a:hover{
   color: #d2812c;
   transition: 0.3s ease-out;
 }
