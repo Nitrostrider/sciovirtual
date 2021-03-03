@@ -34,6 +34,7 @@ p {
 .firstsight {
   background-color:#121940;
   height:100vh;
+  box-shadow: 0 0 20px 0 black;
 }
 
 .firstsightText > h1{
