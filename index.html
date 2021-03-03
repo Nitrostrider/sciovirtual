@@ -6,9 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--favicon-->
-  <link rel="icon" 
-      type="image/png" 
-      href="/assets/img/faviconexample.png">
+  <link rel="icon" type="image/png" href="/assets/img/faviconexample.png">
 
   <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--lato fonts-->
@@ -57,7 +55,7 @@
   <!--navbar-->
   <nav class="navbar fixed-top navbar-expand-custom">
     <div class="container-lg">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/index.html">
         <img src="/assets/img/logo.png" alt="Sciovirtual logo" width="40" height="40"
           class="d-inline-block align-top navlogo"> ScioVirtual</a>
       <button class="navbar-toggler">
@@ -66,7 +64,7 @@
           <span></span>
           <span></span>
           <span></span>
-
+          <!--mobile nav-->
           <ul id="menu">
             <li><a class="mobileNavItem" href="#">Registration</a></li>
             <li><a class="mobileNavItem" href="#">Schools</a></li>
@@ -82,7 +80,7 @@
             <a class="nav-link overlineEffect" href="#">Registration</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link overlineEffect" href="#">Schools</a>
+            <a class="nav-link overlineEffect" href="/anatomy-physiology.html">Schools</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link overlineEffect" href="#">Resources</a>
@@ -430,14 +428,14 @@
           <div class="container">
             <div class="seperator"></div>
             <div class="row">
-              <div class="footer-section col-lg-4 col-md-12 order-lg-1 order-5 d-flex align-items-center">
-                <div>
+              <div class="footer-section col-lg-4 col-md-12 order-lg-1 order-5 d-flex align-items-center" style="background-color:red">
+                <div style="position:relative;left:50%; transform:translateX(-50%);">
                   <img src="/assets/img/logo.png" alt="Sciovirtual logo" width="40" height="40" class="img-fluid" style="left:50%; position:relative;transform:translateX(-50%)">
                   <p style="text-align:center">&copy;2021 by
                   the ScioVirtual Foundation. All rights reserved.</p>
                 </div>
               </div>
-              <div class="footer-section col-lg-2  col-md-3 order-lg-2 order-1">
+              <div class="footer-section col-lg-2 col-6 col-md-3 order-lg-2 order-1">
                 <h2>About Us</h2>
                 <div class="orangeLine"></div>
                 <a href='#'>Privacy Policy</a>
@@ -445,7 +443,7 @@
                 <a href='#'>Our Goal</a>
                 <a href='#'>Donate</a>
               </div>
-              <div class="footer-section col-lg-2 order-lg-3 order-2 col-md-3">
+              <div class="footer-section col-lg-2 col-6 order-lg-3 order-2 col-md-3">
                 <h2>Navigation</h2>
                 <div class="orangeLine"></div>
                 <a href='#'>Registration</a>
@@ -454,7 +452,7 @@
                 <a href='#'>Join Us</a>
                 <a href="#">Abouts Us</a>
               </div>
-              <div class="footer-section col-lg-2 order-lg-4 order-3 col-md-3">
+              <div class="footer-section col-lg-2 col-6 order-lg-4 order-3 col-md-3" style='background-color:green'>
                 <h2>Navigation</h2>
                 <div class="orangeLine"></div>
                 <a href='#'>Registration</a>
@@ -463,7 +461,7 @@
                 <a href='#'>Join Us</a>
                 <a href="#">Abouts Us</a>
               </div>
-              <div class="footer-section col-lg-2 order-lg-5 order-4 col-md-3">
+              <div class="footer-section col-lg-2 col-6 order-lg-5 order-4 col-md-3">
                 <h2>Contact Us</h2>
                 <div class="orangeLine"></div>
                 <a href='#'>Email Us</a>
@@ -587,6 +585,25 @@
       });
     }
   </script>
+  <!--original code
+    /**
+ * Listen to scroll to change header opacity class
+ */
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}-->
 
 
   <!-- animation on scroll-->

@@ -8,6 +8,7 @@ color of blue jeans: #5b80c4
 /*color guide v2
 dark blue:#121940 ;
 dark dark blue: #091038
+light blue: #E9F2FA;
 */
 html {
   height:100%;
@@ -287,7 +288,7 @@ p {
 }
 
 .testimonialTile {
-  padding:0px 30px;
+  padding:0px 50px;
   /*background-color:red;*/
 }
 /*FOOTER*/
@@ -321,6 +322,7 @@ p {
   text-decoration: none;
   margin-bottom: 0.5rem;
   display:block;
+  text-align:center;
 }
 
 .footer-section a:hover{
