@@ -63,7 +63,7 @@ p {
 }
 .firstsightBtnContainer {
   margin-top:30px;
-  background-color:green;
+  /*background-color:green;*/
 }
 .firstsightButton {
   display:inline-block;
@@ -239,10 +239,15 @@ p {
 .courseQuality .col-md-4 {
   padding:0px 20px;
 }
+/*testimonials + yearRound */
+.testimonialsyearRound {
+  color:white;
+  background-color:#121940;
+
+}
 /*year round*/
 .yearRound {
   padding:50px 0px;
-  background-color:#121940;
 }
 .yearRound h1 {
   font-weight:900;
@@ -281,14 +286,13 @@ p {
 }
 /*testimonials section*/
 .testimonial {
-  background-color:#121940;
-  color:white;
   text-align:center;
   padding:40px 0px;
 }
 
 .testimonialTile {
   padding:0px 50px;
+  z-index:10;
   /*background-color:red;*/
 }
 /*FOOTER*/
