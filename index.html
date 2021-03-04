@@ -97,9 +97,11 @@
       </div>
     </div>
   </nav>
+  <!--navbar end-->
 
   <div class="slide0">
     <!--first sight section-->
+    <!--position set to relative because of paintdrop-->
     <div class="firstsight" style="position:relative;">
       <div class="container">
         <div class="row">
@@ -135,6 +137,7 @@
       </div>
 
       <!--paintdrop-->
+      <!--if you change height of paintdrop remember to adjust the js for frost navbar effect and card scroll-->
       <div style="background: url(/assets/img/paintdropv2.svg) repeat-x;width:100%;height:200px;position:absolute;bottom:-200px"></div>
 
     </div>
@@ -158,11 +161,11 @@
       </div>
 
       <!--white on blue wave-->
-      <div class="wbholdtheholdtheocean">
-        <div class="wbholdtheocean">
-          <div class="wbocean">
-            <div class="wbwave"></div>
-            <div class="wbwave"></div>
+      <div class="lbwholdtheholdtheocean">
+        <div class="lbwholdtheocean">
+          <div class="lbwocean">
+            <div class="lbwwave"></div>
+            <div class="lbwwave"></div>
           </div>
         </div>
       </div>
@@ -212,12 +215,12 @@
           </div>
         </div>
       </div>
-      <!--grey on white wave-->
-      <div class="gwholdtheholdtheocean">
-        <div class="gwholdtheocean">
-          <div class="gwocean">
-            <div class="gwwave"></div>
-            <div class="gwwave"></div>
+      <!--grey on light blue wave-->
+      <div class="glbholdtheholdtheocean">
+        <div class="glbholdtheocean">
+          <div class="glbocean">
+            <div class="glbwave"></div>
+            <div class="glbwave"></div>
           </div>
         </div>
       </div>
@@ -601,7 +604,7 @@
           'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });*/
           var rock = $('#slide1').outerHeight();
-          var paper = $(".slide0").outerHeight();
+          var paper = $(".slide0").outerHeight() + 200;
           var tripod = paper * 2 + "px";
           var scissor = rock + paper + 'px';
           $(this).css('height', scissor);
@@ -615,7 +618,7 @@
         'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
       });*/
         var rock = $('#slide1').outerHeight();
-        var paper = $(".slide0").outerHeight();
+        var paper = $(".slide0").outerHeight() + 200;
         var tripod = paper * 2 + "px";
         var scissor = rock + paper + 'px';
         $(this).css('height', scissor);
@@ -628,7 +631,7 @@
   <script type="text/javascript">
     /* Listen to scroll to change header opacity class*/
     function checkScroll() {
-      var startY = $('.slide0').height(); //The point where the navbar changes in px
+      var startY = $('.slide0').height() + 200; //The point where the navbar changes in px
 
       if ($(window).scrollTop() > startY) {
         $('.navbar').addClass("scrolled");

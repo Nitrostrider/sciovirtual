@@ -1,4 +1,5 @@
-/*color guide
+/*
+color guide
 bright orange: #E49526
 dark navy: #1a2150 (outdated)
 purplish gray: #DEE1F6
@@ -9,6 +10,15 @@ color of blue jeans: #5b80c4
 dark blue:#121940 ;
 dark dark blue: #091038
 light blue: #E9F2FA;
+*/
+/*
+boot strap break points
+x-small, none, <576px
+small, sm, >576px
+medium, md, >768px
+large, lg, >992px
+extra large, xl, >1200px
+extra extra large, xxl>1400px
 */
 html {
   height:100%;
@@ -39,7 +49,7 @@ p {
 .firstsightText > h1{
   font-weight:900;
   color:white;
-  font-size:80px;
+  font-size:70px;
 }
 .firstsightText > h2{
   color:white;
@@ -61,15 +71,14 @@ p {
   /*.firstsight {
     padding-top:65px;
     height:auto;
-    padding-bottom:100px;*/
-  }
+    padding-bottom:100px;
+  }*/
   .firstsightText > h1{
     font-size:50px;
   }
 }
 .firstsightBtnContainer {
   margin-top:30px;
-  background-color:green;
 }
 .firstsightButton {
   display:inline-block;
@@ -78,6 +87,7 @@ p {
   text-align:center;
   width:49%;
 }
+/*what it looks like on mobile*/
 @media screen and (max-width:400px) {
   .firstsightButton {
     display:block;
@@ -89,6 +99,7 @@ p {
   font-size:30px;
   width:180px;
   border-width:6px;
+  border-radius:40px;
 }
 .orangebtnlink {
   color:white;
@@ -137,8 +148,7 @@ p {
 @media only screen and (max-width: 992px) {
   .spaceshipContainer {
     margin-top:30px;
-    background-color:pink;
-    width:50%;
+    width:70%;
     left:50%;
     position:relative;
     transform:translateX(-50%);
@@ -147,24 +157,34 @@ p {
 /*mission section*/
 .mission {
   padding-top:150px;
-  background-color:#121940;
+  background-color:white;
   text-align:center;
   padding-bottom:50px;
+  color:#121940;
 }
 .mission h1 {
   font-weight:900;
   font-size:50px;
 }
 .missionEmphasis {
-  color:#bfbfbf;
+  color:grey;
 }
 .missionHeader {
   text-align:center;
 }
+.mission .orangebtnlink {
+  color:white;
+  background-color:#E49526;
+}
+.mission .orangebtnlink:hover {
+  color:#e49526;
+  background-color:transparent;
+}
 
 /*trust section*/
 .trust {
-  margin-bottom:50px;
+  padding-bottom:50px;
+  background-color:#E9F2FA;
 }
 .trustbox {
   text-align:center;
