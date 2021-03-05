@@ -19,11 +19,11 @@
   <!--css for navbar-->
   <link href="/assets/timesaving/navbar/navbar.css" rel="stylesheet">
   <style>
-    .nav-item:nth-child(1)>a {
+    .nav-item:nth-child(3)>a {
       color: lightgray !important;
     }
 
-    .nav-item:nth-child(1):before {
+    .nav-item:nth-child(3):before {
       content: "";
       position: absolute;
       width: 36px;
@@ -34,7 +34,7 @@
       border-radius: 1px;
     }
 
-    #menu li:nth-child(1)>a {
+    #menu li:nth-child(3)>a {
       color: #E49526;
     }
   </style>
@@ -45,8 +45,10 @@
   <nav class="navbar fixed-top navbar-expand-custom">
     <div class="container-lg">
       <a class="navbar-brand" href="/index.html">
-        <img src="/assets/img/logo.png" alt="Sciovirtual logo" width="40" height="40"
-          class="d-inline-block align-top navlogo"> ScioVirtual</a>
+        <img src="/assets/img/logo.png" alt="Sciovirtual logo" width="65" height="65"
+        class="navlogo"> 
+        <span class="">ScioVirtual</span>
+      </a>
       <button class="navbar-toggler">
         <div id="menuToggle">
           <input type="checkbox" />
@@ -55,35 +57,37 @@
           <span></span>
           <!--mobile nav-->
           <ul id="menu">
+            <li><a class="mobileNavItem" href="#">Home</a></li>
+            <li><a class="mobileNavItem" href="#">Summer</a></li>
             <li><a class="mobileNavItem" href="#">Registration</a></li>
             <li><a class="mobileNavItem" href="#">Schools</a></li>
-            <li><a class="mobileNavItem" href="#">Resources</a></li>
-            <li><a class="mobileNavItem" href="#">Join Us</a></li>
-            <li><a class="mobileNavItem" href="#">About Us</a></li>
+            <li><a class="mobileNavItem" href="#">Teach</a></li>
           </ul>
         </div>
       </button>
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item px-2">
+            <a class="nav-link overlineEffect" href="#">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link overlineEffect" href="/anatomy-physiology.html">Summer</a>
+          </li>
+          <li class="nav-item px-2">
             <a class="nav-link overlineEffect" href="#">Registration</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link overlineEffect" href="/anatomy-physiology.html">Schools</a>
+            <a class="nav-link overlineEffect" href="#">Schools</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link overlineEffect" href="#">Resources</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link overlineEffect" href="#">Join Us</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link overlineEffect" href="#">About Us</a>
+            <a class="nav-link overlineEffect" href="#">Teach</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!--navbar end-->
+
   <div style="height:50px;width:100%;background-color:red;margin-top:100px;"></div>
   
 
