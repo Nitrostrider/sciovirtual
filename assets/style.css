@@ -70,14 +70,7 @@ p {
   text-align:center;
   width:49%;
 }
-/*what it looks like on mobile*/
-@media screen and (max-width:400px) {
-  .firstsightButton {
-    display:block;
-    width:100%;
-    margin-bottom:20px;
-  }
-}
+
 .firstsight .orangebtnlink, .firstsight .bluebtnlink {
   font-size:30px;
   width:180px;
@@ -94,7 +87,21 @@ p {
   .firstsight .orangebtnlink, .firstsight .bluebtnlink {
     font-size:20px;
     width:150px;
-    border-width:3px;
+    border-width:4px;
+    border-radius:30px;
+  }
+}
+/*what it looks like on phone*/
+@media screen and (max-width:576px) {
+  .firstsightButton {
+    display:block;
+    width:100%;
+    margin-bottom:5px;
+  }
+  .firstsight .orangebtnlink, .firstsight .bluebtnlink {
+    font-size:16px;
+    width:120px;
+    border-width:4px;
     border-radius:30px;
   }
 }
