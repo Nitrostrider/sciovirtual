@@ -33,9 +33,11 @@ body {
 
 .slide1 {
   width: 100vw;
+  overflow-x:hidden;
   /* IMPORTANT: divs need a width if they're fixed or they won't be visible */
   position: fixed;
   background-position: center;
   background-repeat: none;
+  background-color:red;
 }
 
